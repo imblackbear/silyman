@@ -35,13 +35,13 @@
                         <a class="nav-link" href="#">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.php">Iniciar sesión </a>                      
+                        <a class="nav-link" href="login.php">Iniciar sesión </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    
+
     <!--Header-->
     <header class="main-header" id="inicio">
         <div class="background-overlay">
@@ -65,26 +65,26 @@
     <!--Nosotros-->
     <section class="aboutus" id="nosotros">
             <div class="aboutus--title">
-                
+
                     <h3> Expertos en eliminación de plagas</h3>
                     <p> SILYMAN es una compañía mexicana fundada en el año 1984, desde entonces hemos tenido un crecimiento sostenido con base en nuestro personal altamente capacitado, lo que nos ha permitido consolidarnos en el ramo industrial, comercial, alimenticio y doméstico, ampliando cada vez más nuestra cartera de clientes en varias ciudades del país</p>
-                
+
             </div>
             <div class="row">
                 <div class="aboutus-container primary-color col-md-4">
                     <img src="./img/mission.png" class="aboutus--img"></img>
                     <h6>MISIÓN</h6>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem deserunt ratione, culpa iure iste incidunt, asperiores rerum accusamus quia iusto provident non nisi?</p>
+                    <p>Ser una empresa eficiente y competitiva dedicada al control de plagas, que se distinga por ofrecer servicios de calidad, confianza, seguridad, cuidado al medio ambiente y costos competitivos a nuestros clientes. </p>
                 </div>
                 <div class="aboutus-container second-color col-md-4">
                     <img src="./img/values.png" class="aboutus--img "></img>
-                    <h6>VALORES</h6>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem deserunt ratione, culpa iure iste incidunt, asperiores rerum accusamus quia iusto provident non nisi?</p>
+                    <h6>VISIÓN</h6>
+                    <p>Satisfacer las necesidades y urgencias del cliente dando Apoyo Continuo y Especializado, de manera efectiva y segura</p>
                 </div>
                 <div class="aboutus-container third-color col-md-4">
                     <img src="./img/objective.png" class="aboutus--img "></img>
                     <h6>OBJETIVO</h6>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem deserunt ratione, culpa iure iste incidunt, asperiores rerum accusamus quia iusto provident non nisi?</p>
+                    <p>En Fumigaciones SILYMAN, nuestro principal objetivo es proteger y eliminar las instalaciones residenciales, comerciales e industriales contra plagas indeseables de cucarachas, alacranes, termitas, roedores e incluso serpientes. </p>
                 </div>
             </div>
     </section>
@@ -100,8 +100,8 @@
                     <div class="services-info col-9">
                         <h3>Moscas</h3>
                         <p>Las cucarachas son como un autobús de enfermedades.
-                            El tráfico constante entre heces y comida hace que las cucarachas suelten y recojan un gran número de virus, parásitos y patógenos en su ruta.</p> 
-                    </div>                 
+                            El tráfico constante entre heces y comida hace que las cucarachas suelten y recojan un gran número de virus, parásitos y patógenos en su ruta.</p>
+                    </div>
                 </div>
                 <div class="service--cucaracha row">
                     <figure class="col-3">
@@ -110,7 +110,7 @@
                     <div class="services-info col-9">
                         <h3>Cucarachas</h3>
                         <p>Las cucarachas son como un autobús de enfermedades.
-                            El tráfico constante entre heces y comida hace que las cucarachas suelten y recojan un gran número de virus, parásitos y patógenos en su ruta.</p> 
+                            El tráfico constante entre heces y comida hace que las cucarachas suelten y recojan un gran número de virus, parásitos y patógenos en su ruta.</p>
                     </div>
                 </div>
                 <div class="service--avispa row">
@@ -120,7 +120,7 @@
                     <div class="services-info col-9">
                         <h3>Avispas</h3>
                         <p>Las cucarachas son como un autobús de enfermedades.
-                            El tráfico constante entre heces y comida hace que las cucarachas suelten y recojan un gran número de virus, parásitos y patógenos en su ruta.</p> 
+                            El tráfico constante entre heces y comida hace que las cucarachas suelten y recojan un gran número de virus, parásitos y patógenos en su ruta.</p>
                     </div>
                 </div>
                 <div class="service--alacranes row">
@@ -130,7 +130,7 @@
                     <div class="services-info col-9">
                         <h3>Alacranes</h3>
                         <p>Las cucarachas son como un autobús de enfermedades.
-                            El tráfico constante entre heces y comida hace que las cucarachas suelten y recojan un gran número de virus, parásitos y patógenos en su ruta.</p> 
+                            El tráfico constante entre heces y comida hace que las cucarachas suelten y recojan un gran número de virus, parásitos y patógenos en su ruta.</p>
                     </div>
                 </div>
                 <div class="service--ratones row">
@@ -140,17 +140,17 @@
                     <div class="services-info col-9">
                         <h3>Ratones</h3>
                         <p>Las cucarachas son como un autobús de enfermedades.
-                            El tráfico constante entre heces y comida hace que las cucarachas suelten y recojan un gran número de virus, parásitos y patógenos en su ruta.</p> 
-                    </div>    
+                            El tráfico constante entre heces y comida hace que las cucarachas suelten y recojan un gran número de virus, parásitos y patógenos en su ruta.</p>
+                    </div>
                 </div>
                 <div class="service--hormigas row">
                     <figure class="col-3">
                         <img src="./img/hormiga.png" alt="" class="service--img">
-                    </figure> 
+                    </figure>
                     <div class="services-info col-9">
                         <h3>Hormigas</h3>
                         <p>Las cucarachas son como un autobús de enfermedades.
-                            El tráfico constante entre heces y comida hace que las cucarachas suelten y recojan un gran número de virus, parásitos y patógenos en su ruta.</p> 
+                            El tráfico constante entre heces y comida hace que las cucarachas suelten y recojan un gran número de virus, parásitos y patógenos en su ruta.</p>
                     </div>
                 </div>
                 <div class="service--termita row">
@@ -160,7 +160,7 @@
                     <div class="services-info col-9">
                         <h3>Termitas</h3>
                         <p>Las cucarachas son como un autobús de enfermedades.
-                            El tráfico constante entre heces y comida hace que las cucarachas suelten y recojan un gran número de virus, parásitos y patógenos en su ruta.</p> 
+                            El tráfico constante entre heces y comida hace que las cucarachas suelten y recojan un gran número de virus, parásitos y patógenos en su ruta.</p>
                     </div>
                 </div>
         </div>

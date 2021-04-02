@@ -34,6 +34,7 @@ nav{
 .nav-item .nav-link:hover{
     text-decoration: none;
     color: var(--green-hard);
+    font-weight: 500;
 }
 
 .main-header{
@@ -71,10 +72,11 @@ nav{
 
 /* About us */
 .aboutus .aboutus-container{
-    height: 260px;
+    min-height: 200px;
+    height: auto;
     align-items: center;
     text-align: center;
-    padding: 0 50px;
+    padding: 10px 50px;
 }
 
 
@@ -113,6 +115,11 @@ nav{
     font-weight: bold;
 }
 
+.aboutus-container p {
+  font-size: 15px;
+  line-height: 20px;
+}
+
 /*Servicios*/
 .services{
     width: 100%;
@@ -134,4 +141,3 @@ nav{
     padding: 20px;
     padding-right: 10px;
 }
-

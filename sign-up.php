@@ -42,11 +42,11 @@
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group">
-                <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Contraseña:" required>
+                <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Contraseña:" minlength="6" required>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group">
-                <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Confirmar contraseña:" required>
+                <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Confirmar contraseña:" minlength="6" required>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <button type="submit" class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase">Registrarse</button>
