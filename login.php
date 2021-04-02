@@ -7,21 +7,25 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/account.css">
-    <title>Bootstrap Login Form</title>
+    <title>Login</title>
+    <!--validacion-->
+    <script type="text/javascript" src="./validacion.js"></script>
 </head>
 
 <body>
 
     <div class="d-flex justify-content-center align-items-center login-container">
-        <form class="login-form text-center" action="" method="post">
+        <form class="login-form text-center needs-validation" action="" method="post" novalidate>
             <h1 class="mb-5 font-weight-light text-uppercase">Fumigaciones SILYMAN</h1>
             <div class="form-group">
-                <input type="email" class="form-control rounded-pill form-control-lg" placeholder="Correo:">
+                <input type="email" class="form-control rounded-pill form-control-lg" placeholder="Correo:" required>
+                <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group">
-                <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Contraseña:">
+                <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Contraseña:" required>
+                <div class="invalid-feedback">Complete el campo</div>
             </div>
-            <!-- 
+            <!--
             <div class="forgot-link form-group   align-items-right">
                 <a href="#">¿Olvidaste la contraseña?</a>
             </div>

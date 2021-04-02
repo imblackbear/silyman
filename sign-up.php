@@ -7,39 +7,49 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/account.css">
-    <title>Bootstrap Login Form</title>
+    <title>Registro</title>
+    <!-- validacion js -->
+    <script type="text/javascript" src="./validacion.js"></script>
 </head>
 
 <body>
 
     <div class="d-flex justify-content-center align-items-center login-container">
-        <form class="login-form text-center" action="" method="post">
+        <form class="login-form text-center needs-validation" action="" method="post" novalidate>
             <h1 class="mb-5 font-weight-light text-uppercase">Fumigaciones SILYMAN</h1>
             <div class="form-group">
-                <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Nombres:" maxlength="40">
+                <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Nombres:" maxlength="40" required>
+                <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Apellidos:" maxlength="40">
+                <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Apellidos:" maxlength="40" required>
+                <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group">
-                <input type="email" class="form-control rounded-pill form-control-lg" placeholder="Correo:">
+                <input type="email" class="form-control rounded-pill form-control-lg" placeholder="Correo:" required>
+                <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group">
-                <input type="tel" class="form-control rounded-pill form-control-lg" placeholder="Telefono:" maxlength="10">
+                <input type="tel" class="form-control rounded-pill form-control-lg" placeholder="Telefono:" maxlength="10" required>
+                <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Dirección" >
+                <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Dirección:" required>
+                <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Entre calles:" >
+                <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Entre calles:" required>
+                <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group">
-                <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Contraseña:">
+                <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Contraseña:" required>
+                <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group">
-                <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Confirmar contraseña:">
+                <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Confirmar contraseña:" required>
+                <div class="invalid-feedback">Complete el campo</div>
             </div>
-            <button type="submit" class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase">Iniciar sesión</button>
+            <button type="submit" class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase">Registrarse</button>
             <p class="mt-3 font-weight-normal">¿Ya tienes cuenta? <a href="./login.php"><strong>Inicia sesión</strong></a></p>
             <a href="index.php"><strong>Regresar</strong></a>
         </form>
