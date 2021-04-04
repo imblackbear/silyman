@@ -15,14 +15,14 @@
 <body>
 
     <div class="d-flex justify-content-center align-items-center login-container">
-        <form class="login-form text-center needs-validation" action="" method="post" novalidate>
+        <form class="login-form text-center needs-validation" action="ingreso_login.php" method="post" novalidate>
             <h1 class="mb-5 font-weight-light text-uppercase">Fumigaciones SILYMAN</h1>
             <div class="form-group">
-                <input type="email" class="form-control rounded-pill form-control-lg" placeholder="Correo:" required>
+                <input type="email" name="email" class="form-control rounded-pill form-control-lg" placeholder="Correo:" required>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group">
-                <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Contraseña:" required>
+                <input type="password" name="password" class="form-control rounded-pill form-control-lg" placeholder="Contraseña:" required>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <!--
@@ -30,7 +30,7 @@
                 <a href="#">¿Olvidaste la contraseña?</a>
             </div>
             -->
-            <button type="submit" class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase">Iniciar sesión</button>
+            <button type="submit" class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase" name="login">Iniciar sesión</button>
             <p class="mt-3 font-weight-normal">¿Aún no tienes cuenta? <a href="sign-up.php"><strong>Registrate ahora</strong></a></p>
             <a href="index.php"><strong>Regresar</strong></a>
         </form>
