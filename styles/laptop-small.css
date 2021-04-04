@@ -10,22 +10,10 @@
     width: 100%;
     height: 420px;
     position: absolute;
-    top: 0;
-    left: 0;
     background: rgba(62, 112, 61, .3);
     z-index: 0;
 }
 
 
-.services-info{
-    font-size: 17px;
-}
-.services-info h3{
 
-    font-size: 25px;
-}
-
-.service--img{
-    width: 120px;
-}
 

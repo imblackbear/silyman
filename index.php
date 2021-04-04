@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
+<?php
+    session_start();
+
+?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,10 +21,10 @@
 </head>
 <body>
     <!--Navegación-->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-fixed-top">
         <div class="container-fluid">  
             <a class="navbar-brand" href="">
-                <img class="logo-sily" src="./img/logo.png" alt="">
+                <img class="logo-sily" src="./img/logo.png" alt="logo de silyman">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -86,6 +90,12 @@
     </section>
 
     <!--Pueba de nuevo acomodo-->
+    <div class="container">
+        <div class="service-title col-12">
+            <h2>En SILYMAN nos comprometemos en acabar con las plagas, nuestros servicios de fumigacion son los siguientes:</h2>
+        </div>
+    </div>
+    
     <div class="service-container">
                     <div class="row justify-content-center servicees">
                         <div class="col">
@@ -133,83 +143,6 @@
                         </div>
                     </div>
                 </div> 
-
-    <!--PLagues-->
-    <section class="services" id="servicios">
-        <div class="container">
-            <div class="services-container">
-                <div class="service--mosca row">
-                    <figure class="col-4">
-                            <img src="./img/mosca.png" alt="" class="service--img">
-                    </figure>
-                    <div class="services-info col-8">
-                        <h3>Moscas</h3>
-                        <p>Las cucarachas son como un autobús de enfermedades.
-                            El tráfico constante entre heces y comida hace que las cucarachas suelten y recojan un gran número de virus, parásitos y patógenos en su ruta.</p>
-                    </div>
-                </div>
-                <div class="service--cucaracha row">
-                    <figure class="col-4">
-                        <img src="./img/cucaracha.png" alt="" class="service--img">
-                    </figure>
-                    <div class="services-info col-8">
-                        <h3>Cucarachas</h3>
-                        <p>Las cucarachas son como un autobús de enfermedades.
-                            El tráfico constante entre heces y comida hace que las cucarachas suelten y recojan un gran número de virus, parásitos y patógenos en su ruta.</p>
-                    </div>
-                </div>
-                <div class="service--avispa row">
-                    <figure class="col-4">
-                        <img src="./img/avispa.png" alt="" class="service--img">
-                    </figure>
-                    <div class="services-info col-8">
-                        <h3>Avispas</h3>
-                        <p>Las cucarachas son como un autobús de enfermedades.
-                            El tráfico constante entre heces y comida hace que las cucarachas suelten y recojan un gran número de virus, parásitos y patógenos en su ruta.</p>
-                    </div>
-                </div>
-                <div class="service--alacranes row">
-                    <figure class="col-4">
-                        <img src="./img/alacran.png" alt="" class="service--img">
-                    </figure>
-                    <div class="services-info col-8">
-                        <h3>Alacranes</h3>
-                        <p>Las cucarachas son como un autobús de enfermedades.
-                            El tráfico constante entre heces y comida hace que las cucarachas suelten y recojan un gran número de virus, parásitos y patógenos en su ruta.</p>
-                    </div>
-                </div>
-                <div class="service--ratones row">
-                    <figure class="col-4">
-                        <img src="./img/rata.png" alt="" class="service--img">
-                    </figure>
-                    <div class="services-info col-8">
-                        <h3>Ratones</h3>
-                        <p>Las cucarachas son como un autobús de enfermedades.
-                            El tráfico constante entre heces y comida hace que las cucarachas suelten y recojan un gran número de virus, parásitos y patógenos en su ruta.</p>
-                    </div>
-                </div>
-                <div class="service--hormigas row">
-                    <figure class="col-4">
-                        <img src="./img/hormiga.png" alt="" class="service--img">
-                    </figure>
-                    <div class="services-info col-8">
-                        <h3>Hormigas</h3>
-                        <p>Las cucarachas son como un autobús de enfermedades.
-                            El tráfico constante entre heces y comida hace que las cucarachas suelten y recojan un gran número de virus, parásitos y patógenos en su ruta.</p>
-                    </div>
-                </div>
-                <div class="service--termita row">
-                    <figure class="col-4">
-                        <img src="./img/termita.png" alt="" class="service--img">
-                    </figure>
-                    <div class="services-info col-8">
-                        <h3>Termitas</h3>
-                        <p>Las cucarachas son como un autobús de enfermedades.
-                            El tráfico constante entre heces y comida hace que las cucarachas suelten y recojan un gran número de virus, parásitos y patógenos en su ruta.</p>
-                    </div>
-                </div>
-        </div>
-    </section>
 
 
     <!--BOOSTRAP JAVASCRIPT-->

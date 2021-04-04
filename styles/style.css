@@ -15,15 +15,23 @@
 }
 
 
-
 .logo-sily{
     width: 30%;
 }
 
 nav{
     background-color: #fff;
+    z-index: 100;
 }
 
+.navbar{
+    width: 100%;
+    position: fixed;
+}
+
+.navbar button{
+    background-color: red;
+}
 
 .nav-item .nav-link{
     text-decoration: none;
@@ -42,6 +50,7 @@ nav{
 /* Header video */
 .header{
     position: relative;
+    top: 100px;
     width: 100%;
     height: 170px;
     display: flex;
@@ -52,7 +61,7 @@ nav{
 .header-video{
     position: absolute;
     z-index: -100;
-    top: 20;
+    top: 0px;
     left: 0;
     width: 100%;
     height: 170px;
@@ -61,7 +70,7 @@ nav{
 
 .header-video video{
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     width: 100vw;
 }
@@ -70,7 +79,7 @@ nav{
     width: 100%;
     height: 170px;
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     background: rgba(62, 112, 61, .3);
     z-index: 0;
@@ -85,6 +94,7 @@ nav{
 .header-content h2{
     color: var(--green-hard);
     font-size: 18px;
+    font-weight: bold;
 }
 
 .header-content p {
@@ -130,6 +140,12 @@ nav{
     background-color: var(--green-third);
 }
 
+.aboutus{
+    position: relative;
+    width: 100%;
+    top: 100px;
+}
+
 .aboutus--img{
     width: 50px;
     padding-top: 30px;
@@ -141,7 +157,7 @@ nav{
 .aboutus--title{
     background-color: #fff;
     padding: 60px 0;
-    width: 70%;
+    width: 90%;
     height: auto;
     align-self: center;
     text-align: center;
@@ -149,6 +165,7 @@ nav{
 }
 
 .aboutus h3{
+    font-size: 24px;
     color: #3E703D;
     font-weight: bold;
 }
@@ -174,38 +191,39 @@ nav{
 .plague--container h3{
     font-size: 18px;
 }
+.service-title{
+    position: relative;
+    top: 100px;
+    margin: 30px 0;
+    width: 100%;
+    min-height: 60px;
+    text-align: center;
+    justify-content: center;
+}
 
+.service-title h2{
+    color: var(--green-hard);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.service-container{
+    position: relative;
+    top: 100px;
+    background-color: rgba(62, 112, 61, .2);
+    text-align: center
+}
+
+.service-container h3{
+    padding-top: 15px;
+}
 .service-container .plague--img{
     width: 70px;
-    margin: 5px;
     margin: 0 auto;
+    padding: 20px 0;
     display: block;
 }
 
-/*Servicios*/
-.services{
-    width: 100%;
-    height: auto;
-    margin:100px 0;
-}
 
-.services-info{
-    border-left: 2.5px solid var(--green-hard);
-    margin: 10px 0;
-    font-size: 13px;
-}
-
-.services-info h3{
-    color: var(--green-third);
-    font-size: 20px;
-}
-
-.service--img{
-    width: 60px;
-    height: auto;
-    padding: 5px;
-    padding-right: 10px;
-    float: right;
-}
 
 

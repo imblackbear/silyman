@@ -10,8 +10,6 @@
     width: 100%;
     height: 720px;
     position: absolute;
-    top: 0;
-    left: 0;
     background: rgba(62, 112, 61, .3);
     z-index: 0;
 }
@@ -30,23 +28,28 @@
     background-color: rgba(255, 255, 255, .3);
     font-size: 16px;
 }
+.aboutus--title h3{
+    font-size: 28;
+}
+
+.aboutus--title p{
+    font-size: 18px;
+}
+
+.aboutus-container p {
+    font-size: 18px;
+}
 
 .plague--container h3{
     font-size: 20px;
 }
 
+
+.service-title h2{
+    font-size: 25px;
+}
 .service-container .plague--img{
     width: 100px;
 }
 
-.services-info{
-    font-size: 17px;
-}
-.services-info h3{
 
-    font-size: 25px;
-}
-
-.service--img{
-    width: 120px;
-}
