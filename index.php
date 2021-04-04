@@ -50,7 +50,7 @@
 
     <header class="header">
         <div class="header-video">
-            <video src="video/presentation.mp4" muted autoplay loop></video>
+            <video src="./video/presentation.mp4" muted autoplay loop></video>
         </div>
         <div class="header-overlay"></div>
         <div class="header-content">
