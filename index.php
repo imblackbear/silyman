@@ -85,6 +85,55 @@
             </div>
     </section>
 
+    <!--Pueba de nuevo acomodo-->
+    <div class="service-container">
+                    <div class="row justify-content-center servicees">
+                        <div class="col">
+                            <div class="plague--container">
+                                <h3>Moscas</h3>
+                                <img src="./img/mosca.png" class="plague--img">
+                                
+                            </div> 
+                        </div>
+                        <div class="col">
+                            <div class="plague--container">
+                                <h3>Cucarachas</h3>
+                                <img src="./img/cucaracha.png" class="plague--img">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="plague--container">
+                                <h3>Avispas</h3>
+                                <img src="./img/avispa.png" class="plague--img">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="plague--container">
+                                <h3>Alacranes</h3>
+                                <img src="./img/alacran.png" class="plague--img">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="plague--container">
+                                <h3>Ratones</h3>
+                                <img src="./img/rata.png" class="plague--img">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="plague--container">
+                                <h3>Hormigas</h3>
+                                <img src="./img/hormiga.png" class="plague--img">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="plague--container">
+                                <h3>Termitas</h3>
+                                <img src="./img/termita.png" class="plague--img">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
     <!--PLagues-->
     <section class="services" id="servicios">
         <div class="container">
@@ -121,7 +170,7 @@
                 </div>
                 <div class="service--alacranes row">
                     <figure class="col-4">
-                        <img src="./img/alcran.png" alt="" class="service--img">
+                        <img src="./img/alacran.png" alt="" class="service--img">
                     </figure>
                     <div class="services-info col-8">
                         <h3>Alacranes</h3>

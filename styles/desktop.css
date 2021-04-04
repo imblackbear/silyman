@@ -31,6 +31,13 @@
     font-size: 16px;
 }
 
+.plague--container h3{
+    font-size: 20px;
+}
+
+.service-container .plague--img{
+    width: 100px;
+}
 
 .services-info{
     font-size: 17px;

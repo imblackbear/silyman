@@ -12,8 +12,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
+
+
 
 .logo-sily{
     width: 30%;
@@ -75,7 +76,6 @@ nav{
     z-index: 0;
 }
 
-
 .header-content{
     width: 90%;
     z-index: 1;
@@ -106,27 +106,6 @@ nav{
     color: #fff;
     background-color: var(--green-hard);
 }
-
-/*
-.main-header{
-    position: relative;
-    background-image: url('../img/primerfo.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 50vh; 
-*/
-
-.background-overlay{
-    position: absolute;
-    background: rgba(62, 112, 61, .5);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 100px 0;
-}
-
 
 
 /* About us */
@@ -180,6 +159,29 @@ nav{
     line-height: 20px;
 }
 
+
+/*Plagues*/
+.service-container{
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.servicees{
+    width: 100%;
+}
+.plague--container h3{
+    font-size: 18px;
+}
+
+.service-container .plague--img{
+    width: 70px;
+    margin: 5px;
+    margin: 0 auto;
+    display: block;
+}
+
 /*Servicios*/
 .services{
     width: 100%;
@@ -199,9 +201,11 @@ nav{
 }
 
 .service--img{
-    width: 90px;
+    width: 60px;
     height: auto;
     padding: 5px;
     padding-right: 10px;
     float: right;
 }
+
+
