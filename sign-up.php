@@ -15,38 +15,46 @@
 <body>
 
     <div class="d-flex justify-content-center align-items-center login-container">
-        <form class="login-form text-center needs-validation" action="" method="post" novalidate>
+        <form class="login-form text-center needs-validation" action="registro_clientes.php" method="post" >
             <h1 class="mb-5 font-weight-light text-uppercase">Fumigaciones SILYMAN</h1>
             <div class="form-group">
-                <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Nombres:" maxlength="40" required>
+                <input type="text" name="nom" class="form-control rounded-pill form-control-lg" placeholder="Nombres:" maxlength="40" required>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Apellidos:" maxlength="40" required>
+                <input type="text" name="apellido" class="form-control rounded-pill form-control-lg" placeholder="Apellidos:" maxlength="40" required>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group">
-                <input type="email" class="form-control rounded-pill form-control-lg" placeholder="Correo:" required>
+                <input type="email" name="correo" class="form-control rounded-pill form-control-lg" placeholder="Correo:" required>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group">
-                <input type="tel" class="form-control rounded-pill form-control-lg" placeholder="Telefono:" maxlength="10" required>
+                <input type="tel" name="tel" class="form-control rounded-pill form-control-lg" placeholder="Telefono:" maxlength="10" required>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Dirección:" required>
+                <input type="text" name="num_calle" class="form-control rounded-pill form-control-lg" placeholder="No. Calle:" required>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Entre calles:" required>
+                <input type="text" name="col" class="form-control rounded-pill form-control-lg" placeholder="Colonia:" required>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group">
-                <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Contraseña:" minlength="6" required>
+                <input type="text" name="city" class="form-control rounded-pill form-control-lg" placeholder="Ciudad:" required>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group">
-                <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Confirmar contraseña:" minlength="6" required>
+                <input type="text" name="entre_calle" class="form-control rounded-pill form-control-lg" placeholder="Entre calles:" required>
+                <div class="invalid-feedback">Complete el campo</div>
+            </div>
+            <div class="form-group">
+                <input type="password" name="pass" class="form-control rounded-pill form-control-lg" placeholder="Contraseña:" minlength="6" required>
+                <div class="invalid-feedback">Complete el campo</div>
+            </div>
+            <div class="form-group">
+                <input type="password" name="confirm_pass" class="form-control rounded-pill form-control-lg" placeholder="Confirmar contraseña:" minlength="6" required>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <button type="submit" class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase">Registrarse</button>
