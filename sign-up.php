@@ -11,13 +11,15 @@
     <link rel="stylesheet" href="./styles/account.css">
     <title>Registro</title>
     <!-- validacion js -->
-    <script type="text/javascript" src="./validacion.js"></script>
+    <script type="text/javascript" src="./JS/validacion.js"></script>
+    <!--Alertas con SweetAlert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
 
     <div class="d-flex justify-content-center align-items-center login-container">
-        <form class="login-form text-center needs-validation" action="registro_clientes.php" method="post" >
+        <form class="login-form text-center needs-validation" action="registro_clientes.php" method="post" onsubmit="return validacion()" >
             <h1 class="mb-5 font-weight-light text-uppercase">Fumigaciones SILYMAN</h1>
             <div class="form-group">
                 <input type="text" name="nom" class="form-control rounded-pill form-control-lg" placeholder="Nombres:" maxlength="40" required>
@@ -32,11 +34,11 @@
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group">
-                <input type="tel" name="tel" class="form-control rounded-pill form-control-lg" placeholder="Telefono:" maxlength="10" required>
+                <input type="number" name="tel" class="form-control rounded-pill form-control-lg" placeholder="Telefono:" maxlength="10" required>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group">
-                <input type="text" name="num_calle" class="form-control rounded-pill form-control-lg" placeholder="No. Calle:" required>
+                <input type="number" name="num_calle" class="form-control rounded-pill form-control-lg" placeholder="No. Calle:" required maxlength="10">
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group">
@@ -52,14 +54,14 @@
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group">
-                <input type="password" name="pass" class="form-control rounded-pill form-control-lg" placeholder="Contraseña:" minlength="6" required>
+                <input type="password" name="pass" class="form-control rounded-pill form-control-lg" placeholder="Contraseña:" required minlength="6" id="password">
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group">
-                <input type="password" name="confirm_pass" class="form-control rounded-pill form-control-lg" placeholder="Confirmar contraseña:" minlength="6" required>
+                <input type="password" name="confirm_pass" class="form-control rounded-pill form-control-lg" placeholder="Confirmar contraseña:" required minlength="6"  id="cpassword">
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
-            <button type="submit" class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase">Registrarse</button>
+            <button type="submit" class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase" >Registrarse</button>
             <p class="mt-3 font-weight-normal">¿Ya tienes cuenta? <a href="./login.php"><strong>Inicia sesión</strong></a></p>
             <a href="index.php"><strong>Regresar</strong></a>
         </form>

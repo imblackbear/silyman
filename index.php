@@ -67,8 +67,8 @@
     <!--Nosotros-->
     <section class="aboutus" id="nosotros">
             <div class="aboutus--title">
-                    <h3> Expertos en eliminación de plagas</h3>
-                    <p> SILYMAN es una compañía mexicana fundada en el año 1984, desde entonces hemos tenido un crecimiento sostenido con base en nuestro personal altamente capacitado, lo que nos ha permitido consolidarnos en el ramo industrial, comercial, alimenticio y doméstico, ampliando cada vez más nuestra cartera de clientes en varias ciudades del país</p>
+                    <h3>¿QUIENES SOMOS?</h3>
+                    <p> SILYMAN es una compañía mexicana experta en la eliminación de plagas que brinida sus servicios desde el 2001, desde entonces hemos tenido un crecimiento sostenido con base en nuestro personal altamente capacitado, lo que nos ha permitido consolidarnos en el ramo industrial, comercial, alimenticio y doméstico, ampliando cada vez más nuestra cartera de clientes en varias ciudades del país</p>
             </div>
             <div class="row">
                 <div class="aboutus-container primary-color col-md-4">
@@ -92,12 +92,12 @@
     <!--Pueba de nuevo acomodo-->
     <div class="container">
         <div class="service-title col-12">
-            <h2>En SILYMAN nos comprometemos en acabar con las plagas, nuestros servicios de fumigacion son los siguientes:</h2>
+            <h2>En SILYMAN nos comprometemos en acabar con las plagas, nuestros servicios de fumigación son los siguientes:</h2>
         </div>
     </div>
     
-    <div class="service-container">
-                    <div class="row justify-content-center servicees">
+    <div class="service-container justify-content-center align-self-center">
+                    <div class="row justify-content-center align-self-center servicees">
                         <div class="col">
                             <div class="plague--container">
                                 <h3>Moscas</h3>
@@ -143,6 +143,12 @@
                         </div>
                     </div>
                 </div> 
+
+                <div>
+                    <div>
+
+                    </div>
+                </div>
 
 
     <!--BOOSTRAP JAVASCRIPT-->
