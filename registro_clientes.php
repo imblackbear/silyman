@@ -46,9 +46,9 @@ $consulta=("INSERT INTO `cliente`(`idCliente`, `Nombre`, `Apellido`, `No. Calle`
 
 
 if ($resultados=false){
-   echo '<script language="javascript">alert("Error en el registro","error");</script>';
+   echo '<script language="javascript">alert("Error en el registro");</script>';
    echo '<script lenguage="javascript">window.location.replace("sign-up.php");</script>';
    }else {
-   sleep(2);
+   sleep(1.5);
    echo '<script lenguage="javascript">window.location.replace("login.php");</script>';
 }

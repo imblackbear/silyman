@@ -17,12 +17,14 @@
     <div class="d-flex justify-content-center align-items-center login-container">
         <form class="login-form text-center needs-validation" action="ingreso_login.php" method="post" novalidate>
             <h1 class="mb-5 font-weight-light text-uppercase">Fumigaciones SILYMAN</h1>
-            <div class="form-group">
-                <input type="email" name="email" class="form-control rounded-pill form-control-lg" placeholder="Correo:" required>
+            <div class="form-group row">
+                <span class="col-sm-3">Correo electrónico:</span>
+                <input type="email" name="email" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="ex@example.com" required>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
-            <div class="form-group">
-                <input type="password" name="password" class="form-control rounded-pill form-control-lg" placeholder="Contraseña:" required>
+            <div class="form-group row">
+                <span class="col-sm-3">Contraseña:</span>
+                <input type="password" name="password" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="******" required>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <!--

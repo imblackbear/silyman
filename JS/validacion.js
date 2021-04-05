@@ -32,8 +32,9 @@
             return false;
         }else{
           swal({
-            text: 'Registro exitosoo',
-            icon: 'success'
+            text: 'Registro exitoso',
+            icon: 'success',
+            button: false
           });
             return true;
         }

@@ -21,44 +21,54 @@
     <div class="d-flex justify-content-center align-items-center login-container">
         <form class="login-form text-center needs-validation" action="registro_clientes.php" method="post" onsubmit="return validacion()" >
             <h1 class="mb-5 font-weight-light text-uppercase">Fumigaciones SILYMAN</h1>
-            <div class="form-group">
-                <input type="text" name="nom" class="form-control rounded-pill form-control-lg" placeholder="Nombres:" maxlength="40" required>
+            <div class="form-group row">
+                <span class="col-sm-3">Nombres:</span>
+                <input type="text" name="nom" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="Ingrese su nombre" maxlength="40" required>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
-            <div class="form-group">
-                <input type="text" name="apellido" class="form-control rounded-pill form-control-lg" placeholder="Apellidos:" maxlength="40" required>
+            <div class="form-group row">
+                <span class="col-sm-3">Apellidos:</span>
+                <input type="text" name="apellido" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="Ingrese los apellidos" maxlength="40" required>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
-            <div class="form-group">
-                <input type="email" name="correo" class="form-control rounded-pill form-control-lg" placeholder="Correo:" required>
+            <div class="form-group row">
+                <span class="col-sm-3">Correo electrónico:</span>
+                <input type="email" name="correo" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="ex@example.com" required>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
-            <div class="form-group">
-                <input type="number" name="tel" class="form-control rounded-pill form-control-lg" placeholder="Telefono:" maxlength="10" required>
+            <div class="form-group row">
+                <span class="col-sm-3">Teléfono:</span>
+                <input type="number" name="tel" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="81XXXXXXXX" maxlength="10" required>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
-            <div class="form-group">
-                <input type="number" name="num_calle" class="form-control rounded-pill form-control-lg" placeholder="No. Calle:" required maxlength="10">
+            <div class="form-group row">
+                <span class="col-sm-3">Calle y número:</span>
+                <input type="text" name="num_calle" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="Lugar donde se realizará el sevicio" required >
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
-            <div class="form-group">
-                <input type="text" name="col" class="form-control rounded-pill form-control-lg" placeholder="Colonia:" required>
+            <div class="form-group row">
+                <span class="col-sm-3">Colonia:</span>
+                <input type="text" name="col" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="" required>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
-            <div class="form-group">
-                <input type="text" name="city" class="form-control rounded-pill form-control-lg" placeholder="Ciudad:" required>
+            <div class="form-group row">
+                <span class="col-sm-3">Ciudad:</span>
+                <input type="text" name="city" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="" required>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
-            <div class="form-group">
-                <input type="text" name="entre_calle" class="form-control rounded-pill form-control-lg" placeholder="Entre calles:" required>
+            <div class="form-group row">
+                <span class="col-sm-3">Entre calles:</span>
+                <input type="text" name="entre_calle" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="Referencias" required>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
-            <div class="form-group">
-                <input type="password" name="pass" class="form-control rounded-pill form-control-lg" placeholder="Contraseña:" required minlength="6" id="password">
+            <div class="form-group row">
+                <span class="col-sm-3">Contraseña:</span>
+                <input type="password" name="pass" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="******" required minlength="6" id="password">
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
-            <div class="form-group">
-                <input type="password" name="confirm_pass" class="form-control rounded-pill form-control-lg" placeholder="Confirmar contraseña:" required minlength="6"  id="cpassword">
+            <div class="form-group row">
+                <span class="col-sm-3">Confirmar contraseña:</span>
+                <input type="password" name="confirm_pass" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="******" required minlength="6"  id="cpassword">
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <button type="submit" class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase" >Registrarse</button>

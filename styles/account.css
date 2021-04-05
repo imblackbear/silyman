@@ -15,9 +15,8 @@ body{
 }
 .login-form{
   margin: auto;
-  width: 460px;
+  width: 600px;
   padding: 15px;
-  max-width: 100%;
 }
 .login-form .form-control{
   font-size: 15px;
@@ -57,4 +56,19 @@ body{
 }
 .btn-custom:focus{
   box-shadow: 0 0 0 0.2rem rgba(62, 112, 61, .5);
+}
+
+.login-form .form-control{
+  font-size: 13px;
+  height: 20px;
+}
+.login-form .form-control::placeholder{
+  opacity: .5;
+}
+
+.form-group span{
+  font-weight: bold;
+  font-size: 16px;
+  min-width: 50px;
+  margin: auto;
 }
