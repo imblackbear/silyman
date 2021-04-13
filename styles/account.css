@@ -10,7 +10,7 @@ body{
   color:#666;
 }
 .login-container{
-  height: 100vh;
+  height: 90vh;
   width: 100%;
 }
 .login-form{
@@ -71,4 +71,11 @@ body{
   font-size: 16px;
   min-width: 50px;
   margin: auto;
+}
+
+.form-group .detalle-servicio{
+  
+  max-width: 100%;
+  min-height: 150px;
+  max-height: 350px;
 }
