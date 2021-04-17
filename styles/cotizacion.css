@@ -1,0 +1,61 @@
+.custab{
+    border: 1px solid #ccc;
+    padding: 5px;
+    
+    margin: 5% 0;
+    box-shadow: 3px 3px 2px #ccc;
+    transition: 0.5s;
+    }
+.custab:hover{
+    box-shadow: 3px 3px 0px transparent;
+    transition: 0.5s;
+    
+    }
+    .container{
+        display: flex; 
+    margin : auto;
+   
+
+   
+    }
+    .logo-sily{
+    width: 30%;
+}
+
+nav{
+    background-color: #fff;
+    z-index: 100;
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+}
+
+.navbar button{
+    background-color: red;
+}
+
+.nav-item .nav-link{
+    text-decoration: none;
+    color: #444444;
+    font-size: 18px;
+}
+
+.nav-item .nav-link:hover{
+    text-decoration: none;
+    color: var(--green-hard);
+    font-weight: 500;
+    border-bottom: 1px solid var(--green-hard);
+}
+
+
+.boxStyle {
+    padding: 20px;
+    border-radius: 25px;
+    border-top: 6px solid #dc3545;
+    border-bottom: 6px solid #28a745;
+}
+.width50{
+		width: 50%;
+	}
