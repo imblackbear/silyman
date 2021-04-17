@@ -22,9 +22,15 @@
         <form class="login-form text-center needs-validation"   method="post">
             <h1 class="mb-5 font-weight-light text-uppercase">COTIZACIÓN DE SERVICIO</h1>
             <div class="form-group row">
+                <span class="col-sm-3">Id del cliente:</span>
+                <input type="number" name="idcliente" class="form-control rounded-pill form-control-lg col-sm-9" value="<?php echo $_SESSION['idCliente']; ?>" readonly="">
+                <div class="invalid-feedback">Complete el campo</div>
+            </div>
+            <div class="form-group row">
                 <div class="input-group-prepend col-sm-3">
                     <span>Tipo de servicio:</span>
                 </div>
+                
                 <select class="col-sm-9 custom-select form-control rounded-pill form-control-lg" name="tipo-servicio">
                     <option value="Moscas">Moscas</option>
                     <option value="Cucarachas">Cucarachas</option>

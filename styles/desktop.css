@@ -52,4 +52,12 @@
     width: 100px;
 }
 
+nav div .img-logo{
+    height: 80px;
+}
 
+nav div .img-logo img{
+    vertical-align: middle;
+    width: 230px;
+    height: auto;
+}

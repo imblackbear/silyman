@@ -15,7 +15,7 @@
 <body>
 
     <div class="d-flex justify-content-center align-items-center login-container">
-        <form class="login-form text-center needs-validation" action="ingreso_login.php" method="post" novalidate>
+        <form class="login-form text-center needs-validation" action="ingreso_login.php" method="post" >
             <h1 class="mb-5 font-weight-light text-uppercase">Fumigaciones SILYMAN</h1>
             <div class="form-group row">
                 <span class="col-sm-3">Correo electrónico:</span>
@@ -27,11 +27,6 @@
                 <input type="password" name="password" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="******" required>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
-            <!--
-            <div class="forgot-link form-group   align-items-right">
-                <a href="#">¿Olvidaste la contraseña?</a>
-            </div>
-            -->
             <button type="submit" class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase" name="login">Iniciar sesión</button>
             <p class="mt-3 font-weight-normal">¿Aún no tienes cuenta? <a href="sign-up.php"><strong>Registrate ahora</strong></a></p>
             <a href="index.php"><strong>Regresar</strong></a>

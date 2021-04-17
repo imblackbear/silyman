@@ -23,42 +23,42 @@
             <h1 class="mb-5 font-weight-light text-uppercase">Fumigaciones SILYMAN</h1>
             <div class="form-group row">
                 <span class="col-sm-3">Nombres:</span>
-                <input type="text" name="nom" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="Ingrese su nombre" maxlength="40" required>
+                <input type="text" name="nom" class="form-control rounded-pill form-control-lg col-sm-9" id="username" placeholder="Ingrese su nombre" maxlength="40" required pattern="[a-zA-ZÀ-žñÑ ]+" oninvalid="this.setCustomValidity('Complete el campo e ingrese solo letras')" oninput="this.setCustomValidity('')">
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group row">
                 <span class="col-sm-3">Apellidos:</span>
-                <input type="text" name="apellido" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="Ingrese los apellidos" maxlength="40" required>
+                <input type="text" name="apellido" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="Ingrese los apellidos" maxlength="40" required pattern="[a-zA-ZÀ-žñÑ ]+" oninvalid="this.setCustomValidity('Complete el campo e ingrese solo letras')" oninput="this.setCustomValidity('')">
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group row">
                 <span class="col-sm-3">Correo electrónico:</span>
-                <input type="email" name="correo" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="ex@example.com" required>
+                <input type="email" name="correo" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="ex@example.com" required oninput="this.setCustomValidity('')">
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group row">
                 <span class="col-sm-3">Teléfono:</span>
-                <input type="number" name="tel" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="81XXXXXXXX" maxlength="10" required>
+                <input type="number" name="tel" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="81XXXXXXXX" required pattern="[0-9]{6,10}">
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group row">
                 <span class="col-sm-3">Calle y número:</span>
-                <input type="text" name="num_calle" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="Lugar donde se realizará el sevicio" required >
+                <input type="text" name="num_calle" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="Lugar donde se realizará el sevicio" required pattern="[a-zA-Z 0-9]+" oninvalid="this.setCustomValidity('Complete el campo e ingrese solo letras y números')" oninput="this.setCustomValidity('')">
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group row">
                 <span class="col-sm-3">Colonia:</span>
-                <input type="text" name="col" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="" required>
+                <input type="text" name="col" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="" required pattern="[a-zA-ZÀ-žñÑ ]+" oninvalid="this.setCustomValidity('Complete el campo e ingrese solo letras')" oninput="this.setCustomValidity('')">
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group row">
                 <span class="col-sm-3">Ciudad:</span>
-                <input type="text" name="city" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="" required>
+                <input type="text" name="city" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="" required pattern="[a-zA-ZÀ-žñÑ ]+" oninvalid="this.setCustomValidity('Complete el campo e ingrese solo letras')" oninput="this.setCustomValidity('')">
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group row">
                 <span class="col-sm-3">Entre calles:</span>
-                <input type="text" name="entre_calle" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="Referencias" required>
+                <input type="text" name="entre_calles" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="Referencias" required pattern="[a-zA-ZÀ-žñÑ ]+" oninvalid="this.setCustomValidity('Complete el campo e ingrese solo letras')" oninput="this.setCustomValidity('')">
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <div class="form-group row">

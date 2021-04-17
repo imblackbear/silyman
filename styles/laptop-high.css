@@ -1,3 +1,4 @@
+
 .header{
     height: 590px;
 }
@@ -46,4 +47,14 @@
 
 .aboutus-container p {
     font-size: 18px;
+}
+
+nav div .img-logo{
+    height: 80px;
+}
+
+nav div .img-logo img{
+    vertical-align: middle;
+    width: 230px;
+    height: auto;
 }
