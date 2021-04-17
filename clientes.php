@@ -35,7 +35,7 @@
                         <a class="nav-link" href="CRUD_cotizaciones.php">Cotizaciones</a>
                     </li>
                                        <li class="nav-item">
-                        <a class="nav-link" href="logout.php">Cerrar Sesion </a>
+                        <a class="nav-link" href="./login-signup/logout.php">Cerrar Sesion </a>
                     </li>
                 </ul>
             </div>

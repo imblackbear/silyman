@@ -1,5 +1,5 @@
 <?php
-require ("conexion_db.php");
+require ("../conexion_db.php");
 $log=$_REQUEST['login'];
 $correo=$_REQUEST['email'];
 $pass=$_REQUEST['password'];
@@ -14,7 +14,7 @@ if (isset($_REQUEST['login'])){
     $_SESSION['Nombre']=$row2['Nombre'];
     $_SESSION['Correo']=$row2['Correo'];
     $_SESSION['Contraseña']=$row2['Contraseña'];
-    header("location: clientes.php");
+    header("location: ../clientes.php");
     
     }
  else {
@@ -35,7 +35,7 @@ if (isset($_REQUEST['login'])){
     $_SESSION['Correo']=$row['Correo'];
     $_SESSION['Contraseña']=$row['Contraseña'];
     $_SESSION['Telefono']=$row['Telefono'];
-    header("location: user-main/cotizaciones.php");   
+    header("location: ../user-main/cotizaciones.php");   
         
     }
     

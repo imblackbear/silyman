@@ -44,7 +44,7 @@
                         <a class="nav-link" href="#">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.php">Iniciar sesión </a>
+                        <a class="nav-link" href="./login-signup/login.php">Iniciar sesión </a>
                     </li>
                 </ul>
             </div>

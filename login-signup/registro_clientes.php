@@ -1,7 +1,7 @@
 <!--Alertas con SweetAlert-->
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <?php
-require ("conexion_db.php");
+require ("../conexion_db.php");
 $nombre=$_POST['nom'];
 $apellido=$_POST['apellido'];
 $correo=$_POST['correo'];

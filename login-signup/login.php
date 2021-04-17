@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/account.css">
+    <link rel="stylesheet" href="../styles/account.css">
     <title>Login</title>
     <!--validacion-->
-    <script type="text/javascript" src="./validacion.js"></script>
+    <script type="text/javascript" src="../JS/validacion.js"></script>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
             </div>
             <button type="submit" class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase" name="login">Iniciar sesión</button>
             <p class="mt-3 font-weight-normal">¿Aún no tienes cuenta? <a href="sign-up.php"><strong>Registrate ahora</strong></a></p>
-            <a href="index.php"><strong>Regresar</strong></a>
+            <a href="../index.php"><strong>Regresar</strong></a>
         </form>
     </div>
 
@@ -40,5 +40,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
