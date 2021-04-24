@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/account.css">
+    <link rel="stylesheet" href="../styles/account.css">
     <title>Login</title>
     <!--validacion-->
-    <script type="text/javascript" src="./validacion.js"></script>
+    <script type="text/javascript" src="../validacion.js"></script>
 </head>
 
 <body>
 
     <div class="d-flex justify-content-center align-items-center login-container">
-        <form class="login-form text-center needs-validation" action="ingreso_login.php" method="post" >
+        <form class="login-form text-center needs-validation" action="ingreso_login.php" method="post">
             <h1 class="mb-5 font-weight-light text-uppercase">Fumigaciones SILYMAN</h1>
             <div class="form-group row">
                 <span class="col-sm-3">Correo electrónico:</span>

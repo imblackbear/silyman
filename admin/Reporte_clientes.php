@@ -1,6 +1,6 @@
 <?php
 
-require('fpdf.php');
+require('../fpdf.php');
 
 class PDF extends FPDF
 {
@@ -57,9 +57,9 @@ function Footer()
 }
 }
 
-require 'conexion_db.php';
+require '../conexion_db.php';
 
-$consulta="SELECT * FROM cotizacion;";
+$consulta="SELECT * FROM cliente;";
 $resultado= $conexion->query($consulta); 
 
 $pdf = new PDF();
@@ -70,12 +70,15 @@ $linea = '----------------------------------------------------------------------
 $pdf->SetFont('Arial','B',6);
 $pdf->Cell(45,2,$linea,0,1,'L',0);
 
-$pdf->Cell(15,2.5,'Id Cotizacion',0,0,'L',0);
-$pdf->Cell(15,2.5,'Id cliente',0,0,'L',0);
-$pdf->Cell(20,2.5,'Tipo de Servicio',0,0,'L',0);
-$pdf->Cell(10,2.5,'Metros',0,0,'L',0);
-$pdf->Cell(20,2.5,'Fecha solicitud',0,0,'L',0);
-$pdf->Cell(55,2.5,'Comentarios',0,1,'L',0);
+$pdf->Cell(7.2,2.5,'Id',0,0,'L',0);
+$pdf->Cell(35,2.5,'Nombre',0,0,'L',0);
+$pdf->Cell(35,2.5,'Apellido',0,0,'L',0);
+$pdf->Cell(50,2.5,'Direccion',0,0,'L',0);
+
+$pdf->Cell(40,2.5,'Contacto',0,0,'L',0);
+
+$pdf->Cell(45,2.5,'Correo',0,1,'L',0);
+
 $pdf->Cell(45,2,$linea,0,1,'L',0);
 
 
@@ -88,12 +91,16 @@ $pdf->SetFont('Arial','',6);
 
 while($lista = $resultado3->fetch_assoc()){
  
- $pdf->Cell(15,2.5,$lista['idCotizacion'],0,0,'L',0);
-$pdf->Cell(15,2.5,$lista['cliente_idCliente'],0,0,'L',0);
-$pdf->Cell(20,2.5,$lista['Tipo_insecto'],0,0,'L',0);
-$pdf->Cell(10,2.5,$lista['Metros'],0,0,'L',0);
-$pdf->Cell(20,2.5,$lista['fecha_consulta'],0,0,'L',0);
-$pdf->Cell(55,2.5, utf8_decode($lista['Comentarios']),0,1,'L',0);
+  $direccion = $direccion=$lista['No. Calle'].' '.$lista['Colonia'].' '.$lista['Ciudad'];;
+   $pdf->Cell(7.2,2.5,$lista['idCliente'],0,0,'L',0);
+$pdf->Cell(35,2.5, utf8_decode($lista['Nombre']),0,0,'L',0);
+$pdf->Cell(35,2.5, utf8_decode($lista['Apellido']),0,0,'L',0);
+
+$pdf->Cell(50,2.5,$direccion,0,0,'L',0);
+
+$pdf->Cell(40,2.5,$lista['Telefono'],0,0,'L',0);
+
+$pdf->Cell(45,2.5, utf8_decode($lista['Correo']),0,1,'L',0);
 
 $pdf->Cell(45,2,$linea,0,1,'L',0);
 

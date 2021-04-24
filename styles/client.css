@@ -1,8 +1,7 @@
 .custab{
     border: 1px solid #ccc;
-    padding: 5px;
-    
-    margin: 5% 0;
+    padding: 20px;
+    margin: 10px 0;
     box-shadow: 3px 3px 2px #ccc;
     transition: 0.5s;
     }
@@ -22,6 +21,19 @@
     width: 30%;
 }
 
+nav div .img-logo{
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: center;
+}
+
+nav div .img-logo img{
+    vertical-align: middle;
+    width: 200px;
+    height: auto;
+}
+
 nav{
     background-color: #fff;
     z-index: 100;
@@ -32,8 +44,8 @@ nav{
     position: fixed;
 }
 
-.navbar button{
-    background-color: red;
+button .navbar-toggler-icon {
+    background-image: url('../img/menu.png');
 }
 
 .nav-item .nav-link{
@@ -58,4 +70,49 @@ nav{
 }
 .width50{
 		width: 50%;
+	
+}
+
+.width30 {
+		width: 20%;
 	}
+	.width70 {
+		width: 80%;	
+	}
+	.floatL{
+		float: left;
+	}
+	.width50{
+		width: 50%;
+	}
+	.floatR{
+		float: right;
+	}
+    .width100{
+		width: 300px;
+	}
+    .btn-space{
+        margin-top: 6px;
+    }
+
+
+.container div .flex-div{
+    display: flex;
+}
+
+.btn-width{
+    width: 55px;
+    height: 35px;
+}
+
+.btn-editar{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/editar.png');
+}
+
+.btn-eliminar{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/eliminar.png');
+}

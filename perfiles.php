@@ -1,18 +1,6 @@
 <!doctype html>
 <html lang="es">
-<?php
-    session_start();
-    require ("conexion_db.php");
-    $ID=$_GET['id'];
-    mysqli_select_db($conexion, $db_name) or die ("No se ha encontrando la base de datos solicitada.");
-            $consulta="SELECT * FROM `Cotizacion` WHERE `idCotizacion`='$ID';";
-            $result=  mysqli_query($conexion, $consulta);
-            if($result_consulta=FALSE){
-               echo "Error en la consulta a la base de datos";
-                exit();
-            }
-            $lista=  mysqli_fetch_array($result, MYSQLI_ASSOC);
-?>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,6 +12,8 @@
     <script type="text/javascript" src="./JS/validacion.js"></script>
     <!--Alertas con SweetAlert-->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="peticion.js"></script>
 </head>
 
 <body>

@@ -1,7 +1,7 @@
 <!--Alertas con SweetAlert-->
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <?php
-require ("conexion_db.php");
+require ("../conexion_db.php");
 $nombre=$_POST['nom'];
 $apellido=$_POST['apellido'];
 $correo=$_POST['correo'];
@@ -9,7 +9,7 @@ $telefono=$_POST['tel'];
 $num=$_POST['num_calle'];
 $colonia=$_POST['col'];
 $ciudad=$_POST['city'];
-$entre_calles=$_POST['entre_calles'];
+$entre_calle=$_POST['entre_calle'];
 $contraseña=$_POST['pass'];
 $confirm_contraseña=$_POST['confirm_pass'];
 
@@ -39,7 +39,7 @@ $confirm_contraseña=$_POST['confirm_pass'];
                          $cliente= $cliente+1;
 
  
-$consulta=("INSERT INTO `cliente`(`idCliente`, `Nombre`, `Apellido`, `No. Calle`, `Entre calles`, `Colonia`, `Ciudad`, `Correo`, `Contraseña`, `Telefono`) VALUES ($cliente, '$nombre', '$apellido', '$num', '$entre_calles', '$colonia', '$ciudad', '$correo', '$contraseña', '$telefono');");
+$consulta=("INSERT INTO `cliente`(`idCliente`, `Nombre`, `Apellido`, `No. Calle`, `Entre calles`, `Colonia`, `Ciudad`, `Correo`, `Contraseña`, `Telefono`) VALUES ($cliente, '$nombre', '$apellido', '$num', '$entre_calle', '$colonia', '$ciudad', '$correo', '$contraseña', '$telefono');");
  
  $resultados=mysqli_query($conexion, $consulta);
  

@@ -93,14 +93,14 @@ while($lista = $resultado3->fetch_assoc()){
  
   $direccion = $direccion=$lista['No. Calle'].' '.$lista['Colonia'].' '.$lista['Ciudad'];;
    $pdf->Cell(7.2,2.5,$lista['idCliente'],0,0,'L',0);
-$pdf->Cell(35,2.5,$lista['Nombre'],0,0,'L',0);
-$pdf->Cell(35,2.5,$lista['Apellido'],0,0,'L',0);
+$pdf->Cell(35,2.5, utf8_decode($lista['Nombre']),0,0,'L',0);
+$pdf->Cell(35,2.5, utf8_decode($lista['Apellido']),0,0,'L',0);
 
 $pdf->Cell(50,2.5,$direccion,0,0,'L',0);
 
 $pdf->Cell(40,2.5,$lista['Telefono'],0,0,'L',0);
 
-$pdf->Cell(45,2.5,$lista['Correo'],0,1,'L',0);
+$pdf->Cell(45,2.5, utf8_decode($lista['Correo']),0,1,'L',0);
 
 $pdf->Cell(45,2,$linea,0,1,'L',0);
 

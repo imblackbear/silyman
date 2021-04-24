@@ -1,6 +1,6 @@
 <?php
 
-require('fpdf.php');
+require('../fpdf.php');
 
 class PDF extends FPDF
 {
@@ -57,7 +57,7 @@ function Footer()
 }
 }
 
-require 'conexion_db.php';
+require '../conexion_db.php';
 
 $consulta="SELECT * FROM cotizacion;";
 $resultado= $conexion->query($consulta); 

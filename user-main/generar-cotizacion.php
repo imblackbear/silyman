@@ -47,7 +47,6 @@
                     window.location.replace("../index.php");
                 }, 3000); 
                 </script>';
-                
             }else{
                 echo '<script language="javascript">
                 swal({
