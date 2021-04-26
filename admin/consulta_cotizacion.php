@@ -66,7 +66,7 @@ $contador=0;
                         <td>'.$fila['Comentarios'].'</td>
 			<td>'.$fila['fecha_consulta'].'</td>
 			<td>'.$fila['cliente_idCliente'].'</td>
-                       <td class=“text-center” id=boton_actualizar'.$contador.'><a  class="btn btn-info btn-xs btn-space btn-width btn-editar" href=datos_cotizacion.php?id='.$idcotizar.' style="font-weight: bold; color:white;"></a> <a  class="btn btn-danger btn-xs btn-space btn-width btn-eliminar" href=eliminar_cotizacion.php?id='.$idcotizar.' style="font-weight: bold; color:white; "></a></td>
+                       <td class=“text-center” id=boton_actualizar'.$contador.'><a  class="btn btn-info btn-xs btn-space btn-width" href=datos_cotizacion.php?id='.$idcotizar.' style="font-weight: bold; color:white;">Editar</a> <a  class="btn btn-danger btn-xs btn-space btn-width" href=eliminar_cotizacion.php?id='.$idcotizar.' style="font-weight: bold; color:white; ">Eliminar</a></td>
 
 
 

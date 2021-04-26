@@ -26,7 +26,7 @@
                          }
                         }
                          $cotizacion= $cotizacion+1;
-            $fecha_consulta = date("d/m/y");
+            $fecha_consulta = date("Y-m-d");
 
             //$consulta = "INSERT INTO cotiza(tipos_servicio, area_servicio, detalle_servicio) VALUES ('$tipo_servico','$m_servicio','$d_servicio')";
             $consulta = "INSERT INTO `cotizacion`(`idCotizacion`, `Tipo_insecto`, `Metros`, `Comentarios`, `fecha_consulta`, `cliente_idCliente`) VALUES ($cotizacion,'$tipo_servico','$m_servicio','$d_servicio','$fecha_consulta','$idcli')";

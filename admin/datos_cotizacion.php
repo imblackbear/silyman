@@ -44,6 +44,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="CRUD_cotizaciones.php">Cotizaciones</a>
                     </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="cotizacion_evaluacion.php">Evaluaciones</a>
+                    </li>
                                        <li class="nav-item">
                         <a class="nav-link" href="../logout.php">Cerrar Sesion </a>
                     </li>
@@ -61,7 +64,7 @@
 		<h3 style="text-align: center;   ">Datos de cotizacion</h3>
 	</header>
                
-    <form name="theform" action="" onSubmit="" >
+        <form name="theform" action="insertar_cotizacion_final.php" method="POST" onSubmit="" >
         <section  class="home">
          <div class="row col-md-12 col-md-offset-6 custyle">
                     
@@ -72,35 +75,35 @@
 			
 	 <div class="form-group">
 		<div class="width30 floatL" ><label>Id Cotizacion</label></div>
-                <div class="width70 floatR" ><input id="firstname" class="width100 form-control" name="firstname" type="text" value="<?php echo $lista['idCotizacion']; ?>"  style="width:  20%;" size="50"></div>
+                <div class="width70 floatR" ><input id="" class="width100 form-control"  type="text" value="<?php echo $lista['idCotizacion']; ?>"  style="width:  20%;" size="50" readonly=""></div>
                   <br>    <br>
              </div>     
 	 
 	 <div class="form-group">
 		<div class="width30 floatL" ><label>Id Cliente</label></div>
-                <div class="width70 floatR" ><input  name="lastname"  class="width100 form-control" type="text" value="<?php echo $lista['cliente_idCliente']; ?>" style="width:  20%;" size="50"></div>
+                <div class="width70 floatR" ><input    class="width100 form-control" type="text" value="<?php echo $lista['cliente_idCliente']; ?>" style="width:  20%;" size="50" readonly=""></div>
                 <br>    <br>
 	 </div>
 	 
 	 <div class="form-group">
 		<div class="width30 floatL"><label>Tipo de insecto</label></div>
-		<div class="width70 floatR" ><input  name="age" class="width100 form-control" type="text" value="<?php echo $lista['Tipo_insecto']; ?>"  style="width:  55%;" size="50"></div>
+                <div class="width70 floatR" ><input   class="width100 form-control" type="text" value="<?php echo $lista['Tipo_insecto']; ?>"  style="width:  55%;" size="50" readonly=""></div>
                 <br>    <br>
 	 </div>
 	 <div class="form-group">
 		<div class="width30 floatL" ><label>Metros al cuadrado</label></div>
-		<div class="width70 floatR"  ><input  name="address" class="width100 form-control" type="text" value="<?php echo $lista['Metros']; ?>"  style="width:  55%;" size="50"></div>
+                <div class="width70 floatR"  ><input  class="width100 form-control" type="text" value="<?php echo $lista['Metros']; ?>"  style="width:  55%;" size="50" readonly=""></div>
                 <br>    <br>
 	 </div>
  	 <div class="form-group">
  		<div class="width30 floatL" ><label>Comentarios</label></div>
-                <div class="width70 floatR" ><textarea name="country" class="width100 form-control"  type="text" style="height: 135px;" size="50"><?php echo $lista['Comentarios']; ?></textarea> </div>
+                <div class="width70 floatR" ><textarea  class="width100 form-control"  type="text" style="height: 135px;" size="50" readonly=""><?php echo $lista['Comentarios']; ?> </textarea> </div>
                 <br>    <br>  <br> <br> <br> <br> 
  	 </div>
                    
  	 	<div class="form-group">
  		<div class="width30 floatL" ><label>Fecha de cotizacion</label></div>
-                <div class="width70 floatR"><input  name="password"  class="width100 form-control" size="30"   style="width:  55%;" value="<?php echo $lista['fecha_consulta']; ?>"></div>
+                <div class="width70 floatR"><input  name="fecha_cotizacion"  class="width100 form-control" size="30"   style="width:  55%;" value="<?php echo $lista['fecha_consulta']; ?>" readonly=""></div>
                 <br>    <br>    
  	 </div>
  	 	
@@ -122,28 +125,28 @@
 	
                             
                             <div class="form-group">
-		<div class="width30 floatL"><label>Nombre del cliente</label></div>
-                <div class="width70 floatR"><input  name="lastname" class="width100 form-control" type="text" value="<?php echo $lista['cliente_idCliente']; ?>" style="width:  20%;" size="50"></div>
+		<div class="width30 floatL"><label>Id del cliente</label></div>
+                <div class="width70 floatR"><input  name="id_cli" class="width100 form-control" type="text" value="<?php echo $lista['cliente_idCliente']; ?>" style="width:  20%;" size="50" readonly=""></div>
                 <br> <br>
 	 </div>
 	 <div class="form-group">
-		<div class="width30 floatL"><label>Nombre del cliente</label></div>
-                <div class="width70 floatR"><input  name="lastname"  class="width100 form-control" type="text" value="<?php echo $lista['cliente_idCliente']; ?>" style="width:  20%;" size="50"></div>
+		<div class="width30 floatL"><label>Id de cotizacion</label></div>
+                <div class="width70 floatR"><input  name="id_co"  class="width100 form-control" type="text" value="<?php echo $lista['idCotizacion']; ?>" style="width:  20%;" size="50" readonly=""></div>
                 <br> <br>
 	 </div>
 	 <div class="form-group">
 		<div class="width30 floatL"><label>Concepto</label></div>
-		<div class="width70 floatR"><input  name="email"  src="" class="width100 form-control"  type="text"  size="50"></div>
+		<div class="width70 floatR"><input  name="concep"  src="" class="width100 form-control"  type="text"  size="50"></div>
                 <br> <br>
 	 </div>
 	 <div class="form-group">
 		<div class="width30 floatL"><label>Costo por el servicio</label></div>
-		<div class="width70 floatR"><input  name="age" class="width100 form-control" type="text" style="width:  55%;"  size="50"></div>
+		<div class="width70 floatR"><input  name="costo_s" class="width100 form-control" type="text" style="width:  55%;"  size="50"></div>
                 <br> <br>
 	 </div>
 	 <div class="form-group">
  		<div class="width30 floatL"><label>Fecha de cotizacion</label></div>
-                <div class="width70 floatR"><input  name="password" size="30"  class="width100 form-control" style="width:  55%;" value="<?php echo $lista['fecha_consulta']; ?>"></div>
+                <div class="width70 floatR"><input  size="30"  class="width100 form-control" style="width:  55%;" value="<?php echo $lista['fecha_consulta']; ?>" readonly=""></div>
                 <br> <br>
  	 </div>
  	 	
@@ -151,8 +154,8 @@
 
   	 <div class="form-group">
   	 <div class="row">
-	 <div class="width50"><input class="btn btn-success" type="submit"   value="Submit" style="font-weight: bold"></div>
- 	 <div class="width50"><input class="btn btn-danger" type="reset" style="font-weight: bold"></div>		
+	 <div class="width50"><input class="btn btn-success" type="submit"   value="Guardar" style="font-weight: bold"></div>
+         <div class="width50"><a class="btn btn-danger"  style="font-weight: bold; color: white;" href="CRUD_cotizaciones.php">Regresar</a>	 </div>	
   	 </div>
   	 </div>
 

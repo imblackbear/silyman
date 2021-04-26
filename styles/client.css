@@ -91,6 +91,7 @@ button .navbar-toggler-icon {
     .width100{
 		width: 300px;
 	}
+
     .btn-space{
         margin-top: 6px;
     }
@@ -101,18 +102,5 @@ button .navbar-toggler-icon {
 }
 
 .btn-width{
-    width: 55px;
-    height: 35px;
-}
-
-.btn-editar{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url('../img/editar.png');
-}
-
-.btn-eliminar{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url('../img/eliminar.png');
+    width: 85px;
 }

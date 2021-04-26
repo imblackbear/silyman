@@ -15,7 +15,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 		<!-- SCRIPTS JS-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-                <script src="../JS/peticion_cotizacion.js"></script>
+                <script src="../JS/peticion_evaluacion.js"></script>
 	</head>
         
         
@@ -37,7 +37,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="CRUD_cotizaciones.php">Cotizaciones</a>
                     </li>
-                     <li class="nav-item">
+                    <li class="nav-item">
                          <a class="nav-link" href="cotizacion_evaluacion.php">Evaluaciones</a>
                     </li>
                     <li class="nav-item">
@@ -57,7 +57,7 @@
         <header style="height: 40px; padding: 1px;">
             
         
-		<h3 style="text-align: center;">Cotizaciones</h3>
+		<h3 style="text-align: center;">Evaluaciones</h3>
                 
                  <br>
      
@@ -75,7 +75,7 @@
                     <label>Buscar cotización:&nbsp;
                     <input id="busqueda" class="width100 form-control" name="busqueda" type="text" size="50">
                     </label> 
-                    <a class="btn btn-success" href="Reporte_cotizaciones.php" style="font-weight: bold; color:white;"> Descargar</a>
+                    <a class="btn btn-success" href="Reporte_evaluacion.php" style="font-weight: bold; color:white;"> Descargar</a>
                 </div>
 		</section>
 		<section id="tabla_resultado">
