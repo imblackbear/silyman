@@ -41,7 +41,7 @@
                         <a class="nav-link" href="#servicios">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#">Cotización</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="user-main/login.php">Iniciar sesión </a>
@@ -60,7 +60,7 @@
         <div class="header-content">
             <h2>PRODUCTOS NATURALES</h2>
             <p>En SYLIMAN nos preocupamos por la salud de nuetros clientes, utilizando productos 100% naturales.</p>
-            <a href="" class="btn btn-contratar">¡Contrata ya!</a>
+            <a href="./user-main/login.php" class="btn btn-contratar">¡Contrata ya!</a>
         </div>
     </header>
 
@@ -89,20 +89,21 @@
             </div>
     </section>
 
-    <!--Pueba de nuevo acomodo-->
-    <div class="container">
-        <div class="service-title col-12">
-            <h2>En SILYMAN nos comprometemos en acabar con las plagas, nuestros servicios de fumigación son los siguientes:</h2>
-        </div>
-    </div>
-    
+  
     <div class="service-container justify-content-center align-self-center">
+          <!--Pueba de nuevo acomodo-->
+        <div class="container">
+            <div class="service-title col-12">
+                <h2>En SILYMAN nos comprometemos en acabar con las plagas, nuestros servicios de fumigación son los siguientes:</h2>
+            </div>
+        </div>
+    
+                <div class="container">
                     <div class="row justify-content-center align-self-center servicees">
                         <div class="col">
                             <div class="plague--container">
                                 <h3>Moscas</h3>
                                 <img src="./img/mosca.png" class="plague--img">
-                                
                             </div> 
                         </div>
                         <div class="col">
@@ -143,12 +144,37 @@
                         </div>
                     </div>
                 </div> 
-
-                <div>
-                    <div>
-
+            </div>
+    <!--Contacto-->
+    <div class="cotizacion">  
+        <div class="contacto-container">
+                <div class="row">
+                    <div class="col-md-6 ">
+                            <img src="./img/fumigacion.jpg" alt="fumigacion" class="img-fluid d-none d-md-block">
                     </div>
-                </div>
+
+                    <div class="cotizacion-title col-md-6 text-center justify-content-center align-self-center">
+                        <h2 class="title-contacto">Cotización</h2>
+                        <h6 class="subtitle-contacto">Ofrecemos un programa de fumgación que elimina el total de las plagas en cualquier espacio.</h6>
+                        <p class="p-contacto">Para generar una cotización inicia sesión en tu cuenta o crea una nueva.</p>
+                        <a href="./user-main/login.php" class="btn btn-cotizacion">¡Generar cotización!</a>
+                    </div>
+            </div>
+    </div>
+
+    <div class="ubicacion-container">
+        <div class="title-map">
+            <h2 class="title justify-content-center align-self-center">Ubicación</h2>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.9005275840295!2d-100.25785738454428!3d25.740802915746542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662eb33cafa1ba7%3A0xec2f70fe3c252783!2sPedro%20Chapa%20521%2C%20Unidad%20Laboral%201er%20Sector%2C%2066440%20San%20Nicol%C3%A1s%20de%20los%20Garza%2C%20N.L.!5e0!3m2!1ses-419!2smx!4v1619561257420!5m2!1ses-419!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+    </div>
+
+    <footer>
+
+    </footer>
 
 
     <!--BOOSTRAP JAVASCRIPT-->
