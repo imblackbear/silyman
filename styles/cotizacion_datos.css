@@ -56,21 +56,31 @@ nav {
     border-bottom: 1p
 }
 
-.home {
-   
-   
-    
-    width: 50%;
-    float: left;
+@media (max-width: 1260px) {
+    .home {
+    max-width: 800px;
+    min-width: 360px;
+    margin: 0 auto;
+    }
+    .home_2 {
+        max-width: 800px;
+        min-width: 360px;
+        margin: 0 auto;
+    }
 }
 
-.home_2 {
+@media (min-width: 1260px) {
+    .home {
+        min-width: 50%;
+        float: left;
+    }
     
-   
-    
-    float: right;
-    width: 50%;
+    .home_2 {
+        float: right;
+        min-width: 50%;
+    }
 }
+
 
 .width30 {
 		width: 30%;
