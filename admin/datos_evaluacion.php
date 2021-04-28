@@ -37,12 +37,13 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
 
 <body>
 
+    <!--Navegación-->
     <nav class="navbar navbar-expand-lg navbar-fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="">
+        <div class="container-fluid">  
+            <a class="navbar-brand img-logo" href="">
                 <img class="logo-sily" src="../img/logo.png" alt="logo de silyman">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -54,7 +55,7 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
                         <a class="nav-link" href="CRUD_cotizaciones.php">Cotizaciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cotizacion_evaluacion.php">Evaluaciones</a>
+                         <a class="nav-link" href="cotizacion_evaluacion.php">Evaluaciones</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../logout.php">Cerrar Sesion </a>
@@ -68,10 +69,11 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
     <br>
     <br>
 
-    <header style="height: 40px; padding: 1px;">
-
-        <h3 style="text-align: center;   ">Datos de evaluacion</h3>
+    <header style="height: 40px; padding: 2px;">
+    <br>
+        <h3 style="text-align: center;   ">Datos de evaluación</h3>
     </header>
+    <br><br>
 
     <form name="theform" action="Actualizar_evaluacion.php" method="GET" onSubmit="">
         <section class="home">
@@ -126,7 +128,7 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
                 </div>
             </div>
         </section>
-        <br><br>
+        
         <section class="home_2">
             <div class="container">
                 <div class="col-md-12 bg-light boxStyle">

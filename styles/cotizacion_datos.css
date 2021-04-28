@@ -28,32 +28,45 @@ body {
     width: 30%;
 }
 
-nav {
+/*navegacion*/
+nav div .img-logo{
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: center;
+}
+
+nav div .img-logo img{
+    vertical-align: middle;
+    width: 200px;
+    height: auto;
+}
+
+nav{
     background-color: #fff;
     z-index: 100;
 }
 
-.navbar {
+.navbar{
     width: 100%;
     position: fixed;
-    height: 50px;
 }
 
-.navbar button {
-    background-color: red;
+button .navbar-toggler-icon {
+    background-image: url('../img/menu.png');
 }
 
-.nav-item .nav-link {
+.nav-item .nav-link{
     text-decoration: none;
     color: #444444;
     font-size: 18px;
 }
 
-.nav-item .nav-link:hover {
+.nav-item .nav-link:hover{
     text-decoration: none;
     color: var(--green-hard);
     font-weight: 500;
-    border-bottom: 1p
+    border-bottom: 1px solid var(--green-hard);
 }
 
 @media (max-width: 1260px) {

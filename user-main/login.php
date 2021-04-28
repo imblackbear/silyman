@@ -29,7 +29,7 @@
             </div>
             <button type="submit" class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase" name="login">Iniciar sesión</button>
             <p class="mt-3 font-weight-normal">¿Aún no tienes cuenta? <a href="sign-up.php"><strong>Registrate ahora</strong></a></p>
-            <a href="index.php"><strong>Regresar</strong></a>
+            <a href="../index.php"><strong>Regresar</strong></a>
         </form>
     </div>
 

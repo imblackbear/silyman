@@ -73,7 +73,7 @@
             </div>
             <button type="submit" class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase" >Registrarse</button>
             <p class="mt-3 font-weight-normal">¿Ya tienes cuenta? <a href="./login.php"><strong>Inicia sesión</strong></a></p>
-            <a href="index.php"><strong>Regresar</strong></a>
+            <a href="../index.php"><strong>Regresar</strong></a>
         </form>
     </div>
 

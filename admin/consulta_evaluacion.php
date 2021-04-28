@@ -67,7 +67,7 @@ $contador=0;
                         <td>'.$fila['Costo_serv'].'</td>
 			<td>'.$fila['fecha_consulta'].'</td>
 			
-                       <td class=“text-center” id=boton_actualizar'.$contador.'><a  class="btn btn-info btn-xs btn-space btn-width" href=datos_evaluacion.php?id='.$idcotizar.' style="font-weight: bold; color:white;">Editar</a> <a  class="btn btn-danger btn-xs btn-space btn-width" href=eliminar_evaluacion.php?id='.$idcotizar.' style="font-weight: bold; color:white; ">Eliminar</a></td>
+                       <td class=“text-center” id=boton_actualizar'.$contador.'><a  class="btn btn-info btn-xs btn-space btn-editar" href=datos_evaluacion.php?id='.$idcotizar.' style="font-weight: bold; color:white;"></a> <a  class="btn btn-danger btn-xs btn-space btn-eliminar" href=eliminar_evaluacion.php?id='.$idcotizar.' style="font-weight: bold; color:white; "></a></td>
 
 
 

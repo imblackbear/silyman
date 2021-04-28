@@ -1,45 +1,53 @@
-.custab{
+:root {
+    --green-hard: #176b13;
+    --green-first: #aad047;
+    --green-second: #89c64d;
+    --green-third: #64a446;
+}
+
+.custab {
     border: 1px solid #ccc;
     padding: 20px;
     margin: 10px 0;
     box-shadow: 3px 3px 2px #ccc;
     transition: 0.5s;
-    }
-.custab:hover{
-    box-shadow: 3px 3px 0px transparent;
-    transition: 0.5s;
-    
-    }
-    .container{
-        display: flex; 
-    margin : auto;
-   
-
-   
-    }
-    .logo-sily{
-    width: 30%;
 }
 
-nav div .img-logo{
+.custab:hover {
+    box-shadow: 3px 3px 0px transparent;
+    transition: 0.5s;
+
+}
+
+.container {
+    display: flex;
+    margin: auto;
+}
+
+.logo-sily {
+    width: 30%;
+
+}
+
+nav div .img-logo {
     display: flex;
     flex-direction: column;
     height: 60px;
     justify-content: center;
 }
 
-nav div .img-logo img{
+nav div .img-logo img {
     vertical-align: middle;
     width: 200px;
     height: auto;
 }
 
-nav{
+nav {
     background-color: #fff;
     z-index: 100;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     position: fixed;
 }
@@ -48,13 +56,13 @@ button .navbar-toggler-icon {
     background-image: url('../img/menu.png');
 }
 
-.nav-item .nav-link{
+.nav-item .nav-link {
     text-decoration: none;
     color: #444444;
     font-size: 18px;
 }
 
-.nav-item .nav-link:hover{
+.nav-item .nav-link:hover {
     text-decoration: none;
     color: var(--green-hard);
     font-weight: 500;
@@ -68,39 +76,64 @@ button .navbar-toggler-icon {
     border-top: 6px solid #dc3545;
     border-bottom: 6px solid #28a745;
 }
-.width50{
-		width: 50%;
-	
+
+.width50 {
+    width: 50%;
+
 }
 
 .width30 {
-		width: 20%;
-	}
-	.width70 {
-		width: 80%;	
-	}
-	.floatL{
-		float: left;
-	}
-	.width50{
-		width: 50%;
-	}
-	.floatR{
-		float: right;
-	}
-    .width100{
-		width: 300px;
-	}
+    width: 20%;
+}
 
-    .btn-space{
-        margin-top: 6px;
-    }
+.width70 {
+    width: 80%;
+}
+
+.floatL {
+    float: left;
+}
+
+.width50 {
+    width: 50%;
+}
+
+.floatR {
+    float: right;
+}
+
+.width100 {
+    width: 300px;
+}
+
+.btn-space {
+    margin-top: 6px;
+}
 
 
-.container div .flex-div{
+.container div .flex-div {
     display: flex;
 }
 
-.btn-width{
+.btn-width {
     width: 85px;
+}
+
+.btn-editar {
+    width: 60px;
+    height: 40px;
+    background-image: url('../img/editar.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+}
+
+
+.btn-eliminar {
+    width: 60px;
+    height: 40px;
+    background-image: url('../img/eliminar.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
 }

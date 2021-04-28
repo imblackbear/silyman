@@ -28,12 +28,13 @@ $lista =  mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="">
+            <!--Navegación-->
+            <nav class="navbar navbar-expand-lg navbar-fixed-top">
+        <div class="container-fluid">  
+            <a class="navbar-brand img-logo" href="">
                 <img class="logo-sily" src="../img/logo.png" alt="logo de silyman">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -45,7 +46,7 @@ $lista =  mysqli_fetch_array($result, MYSQLI_ASSOC);
                         <a class="nav-link" href="CRUD_cotizaciones.php">Cotizaciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cotizacion_evaluacion.php">Evaluaciones</a>
+                         <a class="nav-link" href="cotizacion_evaluacion.php">Evaluaciones</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../logout.php">Cerrar Sesion </a>
@@ -54,15 +55,17 @@ $lista =  mysqli_fetch_array($result, MYSQLI_ASSOC);
             </div>
         </div>
     </nav>
+        
 
     <br>
     <br>
     <br>
 
     <header style="height: 40px; padding: 1px;">
-
-        <h3 style="text-align: center;   ">Datos de cotizacion</h3>
+        <br>
+        <h3 style="text-align: center;   ">Datos de cotización</h3>
     </header>
+    <br><br>
 
     <form name="theform" action="insertar_cotizacion_final.php" method="POST" onSubmit="">
         <section class="home">
