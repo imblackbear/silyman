@@ -182,7 +182,7 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
                             <div class="title-paypal">
                                 <h3>Precio total: $<?php echo $lista['Costo_serv']; ?> MXN</h3>
                                 <br>
-                                <h5>Realizar el pago con PayPal:</h5>
+                                
                             </div>               
                             <!--Boton de paypal-->
                             <div>
