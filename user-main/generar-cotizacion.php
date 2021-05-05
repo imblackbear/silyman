@@ -36,16 +36,18 @@
             if($resultado){
                 echo '<script language="javascript">
                 swal({
-                    title: "La cotización se ha creado correctamente",
-                    text: "La solicitud se respondera lo mas pronto posible.",
+                    title: "La cotización se ha creado correctamente ",
+                    text: "Prodrá visualizarla en el apartado de SOLICITUDES cuando se haya generado una respuesta",
                     icon: "success",
-                    button: false,
+                    closeOnClickOutside: false,
                     closeOnEsc: false,
-                    closeOnClickOutside: false
+                    button: "Aceptar"
+                })
+                .then((complete) => {
+                    if (complete) {
+                        window.location.replace("cotizaciones-generadas.php");
+                    }
                 });
-                setTimeout(function(){
-                    window.location.replace("../index.php");
-                }, 3000); 
                 </script>';
             }else{
                 echo '<script language="javascript">

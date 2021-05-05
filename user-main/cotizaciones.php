@@ -33,10 +33,10 @@ $_SESSION['idCliente'];
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="cotizaciones.php">Gerenar cotización</a>
+                        <a class="nav-link" href="cotizaciones.php">Generar cotización</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cotizaciones-generadas.php">Ver solicitudes</a>
+                        <a class="nav-link" href="cotizaciones-generadas.php">Solicitudes</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../logout.php">Cerrar Sesion </a>
@@ -77,7 +77,7 @@ $_SESSION['idCliente'];
             </div>
             <div class="form-group row">
                 <span class="col-sm-3">Detalle del servicio:</span>
-                <textarea type="text" name="d-servicio" class="form-control form-control-lg detalle-servicio col-sm-9" placeholder="Describa del problema y servicio requerido" required></textarea>
+                <textarea type="text" name="d-servicio" class="area-container form-control col-sm-9" placeholder="Descripción del problema y del servicio requerido" required style="min-height:90px; max-height: 300px;" ></textarea>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
             <button type="submit" class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase" name="enviar-co">Enviar</button>

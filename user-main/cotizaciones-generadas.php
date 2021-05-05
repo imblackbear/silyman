@@ -36,7 +36,7 @@
                         <a class="nav-link" href="cotizaciones.php">Gerenar cotización</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cotizaciones-generadas.php">Ver solicitudes</a>
+                        <a class="nav-link" href="cotizaciones-generadas.php">Solicitudes</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../logout.php">Cerrar Sesion </a>
