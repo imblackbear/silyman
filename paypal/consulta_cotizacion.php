@@ -12,25 +12,30 @@ if ($conexion -> connect_errno)
 	die("Fallo la conexion:(".$conexion -> mysqli_connect_errno().")".$conexion-> mysqli_connect_error());
 }
 
+//Prueba de sesiones
+
+session_start();
+$idCliente = $_SESSION['idCliente'];
+
 //////////////// VALORES INICIALES ///////////////////////
 
 $tabla="";
-$query="SELECT * FROM cotizacion ORDER BY idCotizacion";
+$query="SELECT * FROM evaluacion where cliente_idCliente = '$idCliente'";
 
 ///////// LO QUE OCURRE AL TECLEAR SOBRE EL INPUT DE BUSQUEDA ////////////
 if(isset($_POST['buscar']))
 {
 	$q=$conexion->real_escape_string($_POST['buscar']);
-	$query="SELECT * FROM cotizacion WHERE 
-		IdCotizacion LIKE '%".$q."%' OR
-		Tipo_insecto LIKE '%".$q."%' OR
-	        Metros LIKE '%".$q."%' OR
-                    
-		Comentarios LIKE '%".$q."%' OR
-                fecha_consulta LIKE '%".$q."%' OR 
-                
+	$query="SELECT * FROM evaluacion WHERE 
+		IdEvaluacion LIKE '%".$q."%' OR
+		cotizacion_idCotizacion LIKE '%".$q."%' OR
+	        cliente_idCliente LIKE '%".$q."%' OR
+                   
+		
+                Concepto LIKE '%".$q."%' OR 
+                Costo_serv LIKE '%".$q."%' OR
               
-                cliente_idCliente LIKE '%".$q."%'";
+                fecha_consulta LIKE '%".$q."%'";
 }
 
 $buscar=$conexion->query($query);
@@ -41,12 +46,12 @@ if ($buscar->num_rows > 0)
 	<table class="table table-striped custab" id="crud" >
 <thead>		
 <tr>
-			<th>Id Cotizacion</th>
-            <th>Tipo de servicio</th>
-            <th>Metros cuadrados</th>
-            <th>Descripción</th>
-            <th>Fecha de la solicitud</th>
-            <th>Id de cliente</th>
+			<th>Id Evaluacion</th>
+            <th>Id cliente</th>
+            <th>Id Cotizacion</th>
+            <th>Concepto</th>
+            <th>Costo de servicio ($)</th>
+            <th>Fecha de cotizacion</th>
             <th id="boton_eliminar">Actualizar</th>
 			
 		</tr>
@@ -56,18 +61,16 @@ $contador=0;
 	{
             $contador++;
             $boton="btn btn-success";
-          $idcotizar=$fila['idCotizacion'];
+          $idcotizar=$fila['idEvaluacion'];
 		$tabla.=
 		'<tr>
-                    
-			<td>'.$fila['idCotizacion'].'</td>
-			<td>'.$fila['Tipo_insecto'].'</td>
-			<td>'.$fila['Metros'].'</td>
-            <td>'.$fila['Comentarios'].'</td>
+            <td>'.$fila['idEvaluacion'].'</td>
+            <td>'.$fila['cliente_idCliente'].'</td>
+			<td>'.$fila['cotizacion_idCotizacion'].'</td>
+			<td>'.$fila['Concepto'].'</td>
+            <td>'.$fila['Costo_serv'].'</td>
 			<td>'.$fila['fecha_consulta'].'</td>
-			<td>'.$fila['cliente_idCliente'].'</td>
-            <td class=“text-center” id=boton_actualizar'.$contador.'><a  class="btn btn-info btn-xs btn-space  btn-editar" href=datos_cotizacion.php?id='.$idcotizar.' style="font-weight: bold; color:white;"></a> <a  class="btn btn-danger btn-xs btn-space btn-eliminar" href=eliminar_cotizacion.php?id='.$idcotizar.' style="font-weight: bold; color:white; "></a></td>
-			
+            <td class=“text-center” id=boton_actualizar'.$contador.'><a  class="btn btn-info btn-xs btn-space" href=datos_evaluacion.php?id='.$idcotizar.' style="font-weight: bold; color:white;">Pagar</a></td>
 		</tr>
 		';
 	}

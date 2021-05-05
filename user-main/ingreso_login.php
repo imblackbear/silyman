@@ -35,7 +35,7 @@ if (isset($_REQUEST['login'])){
     $_SESSION['Correo']=$row['Correo'];
     $_SESSION['Contraseña']=$row['Contraseña'];
     $_SESSION['Telefono']=$row['Telefono'];
-    header("location: cotizaciones.php");   
+    header("location: cotizaciones.php?id=".$_POST['idCliente']=$row['idCliente']);   
         
     }
     

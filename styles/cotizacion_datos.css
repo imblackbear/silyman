@@ -113,3 +113,18 @@ button .navbar-toggler-icon {
         .width100{
 		width: 100%;
 	}
+
+.button-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+.title-paypal {
+    width:50%;
+}
+.button-paypal{
+    width:50%;
+    margin: 0 auto;
+    max-width: 250px;
+}

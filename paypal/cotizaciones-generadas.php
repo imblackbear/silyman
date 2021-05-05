@@ -21,8 +21,8 @@
 
 
 <body onload="funcion_priv()">
-    <!--Navegación-->
-    <nav class="navbar navbar-expand-lg navbar-fixed-top">
+<!--Navegación-->
+<nav class="navbar navbar-expand-lg navbar-fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand img-logo" href="">
                 <img class="logo-sily" src="../img/logo.png" alt="logo de silyman">
@@ -33,13 +33,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="clientes.php">Clientes </a>
+                        <a class="nav-link" href="cotizaciones.php">Gerenar cotización</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="CRUD_cotizaciones.php">Cotizaciones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cotizacion_evaluacion.php">Evaluaciones</a>
+                        <a class="nav-link" href="cotizaciones-generadas.php">Ver solicitudes</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../logout.php">Cerrar Sesion </a>
@@ -48,7 +45,6 @@
             </div>
         </div>
     </nav>
-
     <br>
 
 
