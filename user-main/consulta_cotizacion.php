@@ -52,7 +52,8 @@ if ($buscar->num_rows > 0)
             <th>Concepto</th>
             <th>Costo de servicio ($)</th>
             <th>Fecha de cotizacion</th>
-            <th id="boton_eliminar">Actualizar</th>
+			<th>Estado del pago</th>
+            <th id="boton_eliminar"></th>
 			
 		</tr>
                 </thead>';
@@ -61,7 +62,7 @@ $contador=0;
 	{
             $contador++;
             $boton="btn btn-success";
-          $idcotizar=$fila['idEvaluacion'];
+        $idcotizar=$fila['idEvaluacion'];
 		$tabla.=
 		'<tr>
             <td>'.$fila['idEvaluacion'].'</td>
@@ -70,6 +71,7 @@ $contador=0;
 			<td>'.$fila['Concepto'].'</td>
             <td>'.$fila['Costo_serv'].'</td>
 			<td>'.$fila['fecha_consulta'].'</td>
+			<td>'.$fila['pago'].'</td>
             <td class=“text-center” id=boton_actualizar'.$contador.'><a  class="btn btn-info btn-xs btn-space" href=datos_evaluacion.php?id='.$idcotizar.' style="font-weight: bold; color:white;">Pagar</a></td>
 		</tr>
 		';

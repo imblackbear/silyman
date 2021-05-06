@@ -42,7 +42,7 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
     </script>
 
     <!--Navegación-->
-<nav class="navbar navbar-expand-lg navbar-fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand img-logo" href="">
                 <img class="logo-sily" src="../img/logo.png" alt="logo de silyman">
@@ -71,7 +71,7 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
     <br>
 
     <header style="height: 40px; padding: 2px;">
-    <br>
+        <br>
         <h3 style="text-align: center;   ">Datos de la cotización</h3>
     </header>
     <br><br>
@@ -83,7 +83,7 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
                     <div class="col-sm-12 bg-light boxStyle">
                         <h3 style="text-align: center;   ">Datos del cliente</h3>
                         <br>
-                    
+
                         <div class="form-group">
                             <div class="width30 floatL"><label>Nombre:</label></div>
                             <div class="width70 floatR"><input id="" class="width100 form-control" type="text" value="<?php echo $lista2['Nombre'] . ' ' . $lista2['Apellido']; ?>" size="50" readonly=""></div>
@@ -125,7 +125,7 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
                 </div>
             </div>
         </section>
-        
+
         <section class="home_2">
             <div class="container">
                 <div class="col-md-12 bg-light boxStyle">
@@ -178,17 +178,17 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
                         <br> <br> <br> <br> <br>
                     </div>
 
-                    <div class="button-container">      
-                            <div class="title-paypal">
-                                <h3>Precio total: $<?php echo $lista['Costo_serv']; ?> MXN</h3>
-                                <br>
-                                
-                            </div>               
-                            <!--Boton de paypal-->
-                            <div>
-                                
-                                <div class="button-paypal col-md-4" id="paypal-button-container"></div>
-                            </div>
+                    <div class="button-container">
+                        <div class="title-paypal">
+                            <h3>Precio total: $<?php echo $lista['Costo_serv']; ?> MXN</h3>
+                            <br>
+
+                        </div>
+                        <!--Boton de paypal-->
+                        <div>
+
+                            <div class="button-paypal col-md-4" id="paypal-button-container"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -227,20 +227,22 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
             onApprove: function(data, actions) {
                 return actions.order.capture().then(function(details) {
                     console.log(details);
+                    var estatus = details.status;
+                    console.log(estatus);
                     swal({
-                        title: 'Pago realizado correctamente',
-                        text: 'Nos ponderemos en contacto para la realización del servicio',
-                        icon: 'success',
-                        closeOnClickOutside: false,
-                        closeOnEsc: false,
-                        button: 'Aceptar'
-                    })
-                    .then((complete) => {
-                        if (complete) {
-                            window.location.replace("cotizaciones-generadas.php");
-                        }
-                    });
-                });
+                            title: 'Pago realizado correctamente',
+                            text: 'Nos ponderemos en contacto para la realización del servicio',
+                            icon: 'success',
+                            closeOnClickOutside: false,
+                            closeOnEsc: false,
+                            button: 'Aceptar'
+                        })
+                        .then((complete) => {
+                            if (complete) {
+                                window.location.replace("acreditar_pago.php?id=<?php echo $lista['idEvaluacion']; ?>");
+                            }
+                        });
+                });               
             }
         }).render('#paypal-button-container'); // Display payment options on your web page
     </script>
