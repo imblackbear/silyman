@@ -46,11 +46,9 @@ if ($buscar->num_rows > 0)
 	<table class="table table-striped custab" id="crud" >
 <thead>		
 <tr>
-			<th>Id Evaluacion</th>
-            <th>Id cliente</th>
-            <th>Id Cotizacion</th>
+			<th>Numero de cotización</th>
             <th>Concepto</th>
-            <th>Costo de servicio ($)</th>
+            <th>Costo de servicio ($MXN)</th>
             <th>Fecha de cotizacion</th>
 			<th>Estado del pago</th>
             <th id="boton_eliminar"></th>
@@ -66,8 +64,6 @@ $contador=0;
 		$tabla.=
 		'<tr>
             <td>'.$fila['idEvaluacion'].'</td>
-            <td>'.$fila['cliente_idCliente'].'</td>
-			<td>'.$fila['cotizacion_idCotizacion'].'</td>
 			<td>'.$fila['Concepto'].'</td>
             <td>'.$fila['Costo_serv'].'</td>
 			<td>'.$fila['fecha_consulta'].'</td>
