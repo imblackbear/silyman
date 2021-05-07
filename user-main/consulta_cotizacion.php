@@ -67,7 +67,7 @@ $contador=0;
 			<td>'.$fila['Concepto'].'</td>
             <td>'.$fila['Costo_serv'].'</td>
 			<td>'.$fila['fecha_consulta'].'</td>
-			<td>'.$fila['pago'].'</td>
+			<td style="font-weight:bold"><p id="estado-pago">'.$fila['pago'].'</p></td>
             <td class=“text-center” id=boton_actualizar'.$contador.'><a  class="btn btn-info btn-xs btn-space" href=datos_evaluacion.php?id='.$idcotizar.' style="font-weight: bold; color:white;">Pagar</a></td>
 		</tr>
 		';
@@ -78,7 +78,18 @@ $contador=0;
 	{
 		$tabla="<br><br><br>No se encontraron coincidencias con sus criterios de búsqueda.";
 	}
+	/*
+	$estadoPago = "SELECT pago FROM `evaluacion` where cliente_idCliente = '$idCliente';";
+	$resultado = mysqli_query($conexion, $estadoPago);
+	$listaP = mysqli_fetch_array($resultado, MYSQLI_ASSOC);
 
-
+		if ($listaP["pago"] == "ACREDITADO") {
+			echo '<script language="javascript">
+			document.getElementById("estado-pago").classList.remove("text-warning");
+			document.getElementById("estado-pago").classList.add("text-success");
+			</script>';
+		}
+	*/
 echo $tabla;
+
 ?>

@@ -125,7 +125,6 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
                 </div>
             </div>
         </section>
-
         <section class="home_2">
             <div class="container">
                 <div class="col-md-12 bg-light boxStyle">
@@ -177,7 +176,12 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
                         <div class="width70 floatR"><textarea class="width100 form-control" type="text" style="height: 115px;" size="50" readonly=""><?php echo $lista2['Comentarios']; ?> </textarea> </div>
                         <br> <br> <br> <br> <br>
                     </div>
-
+                    <div class="form-group">
+                        <div class="width30 floatL"><label>Estado del pago:</label></div>
+                        <div class="width70 floatR"><input name="costo_s" class="width100 form-control text-warning" id="estado-pago" type="text" value="<?php echo $lista['pago']; ?>" style="width:  55%; font-weight:bold" size="50" readonly=""></div>
+                        <br> <br>
+                    </div>
+                    
                     <div class="button-container">
                         <div class="title-paypal">
                             <h3>Precio total: $<?php echo $lista['Costo_serv']; ?> MXN</h3>
@@ -185,8 +189,7 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
 
                         </div>
                         <!--Boton de paypal-->
-                        <div>
-
+                        <div id="boton-paypal" class="">
                             <div class="button-paypal col-md-4" id="paypal-button-container"></div>
                         </div>
                     </div>
@@ -195,10 +198,8 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
         </section>
 
 
-
-
     </form>
-
+    <br>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -226,9 +227,6 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
             },
             onApprove: function(data, actions) {
                 return actions.order.capture().then(function(details) {
-                    console.log(details);
-                    var estatus = details.status;
-                    console.log(estatus);
                     swal({
                             title: 'Pago realizado correctamente',
                             text: 'Nos ponderemos en contacto para la realización del servicio',
@@ -242,10 +240,33 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
                                 window.location.replace("acreditar_pago.php?id=<?php echo $lista['idEvaluacion']; ?>");
                             }
                         });
-                });               
+
+                    if (details.co)
+                        document.getElementById('boton-paypal').classList.add('d-none');
+                });
             }
         }).render('#paypal-button-container'); // Display payment options on your web page
     </script>
+
+    <?php
+
+    require("../conexion_db.php");
+    $ID = $_GET['id'];
+    mysqli_select_db($conexion, $db_name) or die("No se ha encontrando la base de datos solicitada.");
+    $estadoPago = "SELECT pago FROM `evaluacion` WHERE `idEvaluacion` = '$ID';";
+    $resultado = mysqli_query($conexion, $estadoPago);
+    $listaP = mysqli_fetch_array($resultado);
+
+    if ($listaP['pago'] === "ACREDITADO") {
+        echo '<script language="javascript">
+        document.getElementById("boton-paypal").classList.add("d-none");
+        document.getElementById("estado-pago").classList.remove("text-warning");
+        document.getElementById("estado-pago").classList.add("text-success");
+        </script>';
+    }
+
+    ?>
+
 </body>
 
 </html>

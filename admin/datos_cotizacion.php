@@ -126,12 +126,12 @@ $lista =  mysqli_fetch_array($result, MYSQLI_ASSOC);
                         </div>
                         <div class="form-group">
                             <div class="width30 floatL"><label>Concepto</label></div>
-                            <div class="width70 floatR"><input name="concep" src="" class="width100 form-control" type="text" size="50"></div>
+                            <div class="width70 floatR"><input name="concep" src="" class="width100 form-control" type="text" size="50" pattern="[a-zA-ZÀ-ž0-9ñÑ ]+" oninvalid="this.setCustomValidity('Complete el campo. Solo puede ingresar letras y números')" oninput="this.setCustomValidity('')" minlength="5"></div>
                             <br> <br>
                         </div>
                         <div class="form-group">
                             <div class="width30 floatL"><label>Costo por el servicio</label></div>
-                            <div class="width70 floatR"><input name="costo_s" class="width100 form-control" type="text" style="width:  55%;" size="50"></div>
+                            <div class="width70 floatR"><input name="costo_s" class="width100 form-control" type="number" style="width:  55%;" size="50" min="1" pattern="^[0-9]+"></div>
                             <br> <br>
                         </div>
                         <div class="form-group">

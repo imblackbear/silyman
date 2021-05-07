@@ -129,6 +129,7 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
             </div>
         </section>
         
+
         <section class="home_2">
             <div class="container">
                 <div class="col-md-12 bg-light boxStyle">
@@ -179,12 +180,12 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
 
                     <div class="form-group">
                         <div class="width30 floatL"><label>Concepto</label></div>
-                        <div class="width70 floatR"><input name="concep" src="" class="width100 form-control" type="text" value="<?php echo $lista['Concepto']; ?>" size="50"></div>
+                        <div class="width70 floatR"><input name="concep" src="" class="width100 form-control" type="text" value="<?php echo $lista['Concepto']; ?>" size="50" pattern="[a-zA-Z0-9À-žñÑ ]+" oninvalid="this.setCustomValidity('Complete el campo. Solo puede ingresar letras y números')" oninput="this.setCustomValidity('')" minlength="5"></div>
                         <br> <br>
                     </div>
                     <div class="form-group">
                         <div class="width30 floatL"><label>Costo por el servicio</label></div>
-                        <div class="width70 floatR"><input name="costo_s" class="width100 form-control" type="text" value="<?php echo $lista['Costo_serv']; ?>" style="width:  55%;" size="50"></div>
+                        <div class="width70 floatR"><input name="costo_s" class="width100 form-control" type="text" value="<?php echo $lista['Costo_serv']; ?>" style="width:  55%;" size="50" min="1" pattern="^[0-9]+"></div>
                         <br> <br>
                     </div>
                     <div class="form-group">
@@ -192,7 +193,11 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
                         <div class="width70 floatR"><textarea class="width100 form-control" type="text" style="height: 115px;" size="50" readonly=""><?php echo $lista2['Comentarios']; ?> </textarea> </div>
                         <br> <br> <br> <br> <br>
                     </div>
-
+                    <div class="form-group">
+                        <div class="width30 floatL"><label>Estado del pago:</label></div>
+                        <div class="width70 floatR"><input name="costo_s" class="width100 form-control text-warning" id="estado-pago" type="text" value="<?php echo $lista['pago']; ?>" style="width:  55%; font-weight:bold" size="50" readonly=""></div>
+                        <br> <br>
+                    </div>
                     <div class="form-group">
                         <div class="row">
                             <div class="width50"><input class="btn btn-success" type="submit" value="Guardar" style="font-weight: bold"></div>
@@ -202,13 +207,25 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
                 </div>
             </div>
         </section>
-
-
-
-
+        
     </form>
 
+    <?php
 
+    require("../conexion_db.php");
+    $ID = $_GET['id'];
+    mysqli_select_db($conexion, $db_name) or die("No se ha encontrando la base de datos solicitada.");
+    $estadoPago = "SELECT pago FROM `evaluacion` WHERE `idEvaluacion` = '$ID';";
+    $resultado = mysqli_query($conexion, $estadoPago);
+    $listaP = mysqli_fetch_array($resultado);
+
+    if ($listaP['pago'] === "ACREDITADO") {
+        echo '<script language="javascript">
+        document.getElementById("estado-pago").classList.remove("text-warning");
+        document.getElementById("estado-pago").classList.add("text-success");
+        </script>';
+    }
+    ?>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

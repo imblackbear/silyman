@@ -3,6 +3,10 @@ body {
     color: #666;
 }
 
+.width30 label{
+    font-weight: bold;
+}
+
 .width50 {
     width: 50%;
 }
@@ -69,7 +73,7 @@ button .navbar-toggler-icon {
     border-bottom: 1px solid var(--green-hard);
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1420px) {
     .home {
     max-width: 800px;
     min-width: 360px;
@@ -78,11 +82,11 @@ button .navbar-toggler-icon {
     .home_2 {
         max-width: 800px;
         min-width: 360px;
-        margin: 0 auto;
+        margin: 20px auto;
     }
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 1420px) {
     .home {
         min-width: 50%;
         float: left;
@@ -128,3 +132,4 @@ button .navbar-toggler-icon {
     margin: 0 auto;
     max-width: 250px;
 }
+
