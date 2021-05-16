@@ -119,20 +119,32 @@ button .navbar-toggler-icon {
     width: 85px;
 }
 
+
+
 .btn-editar {
-    width: 60px;
+    width: 40px;
     height: 40px;
     background-image: url('../img/editar.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px;
+    
 }
 
 
 .btn-eliminar {
-    width: 60px;
+    width: 40px;
     height: 40px;
     background-image: url('../img/eliminar.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+}
+
+.btn-descargar {
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/download.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px;

@@ -44,7 +44,7 @@ if ($buscar->num_rows > 0) {
             <th>Costo de servicio ($)</th>
             <th>Fecha de cotizacion</th>
 			<th>Estado del pago</th>
-            <th id="boton_eliminar">Actualizar</th>
+            <th id="boton_eliminar"></th>
 			
 		</tr>
                 </thead>';
@@ -61,9 +61,8 @@ if ($buscar->num_rows > 0) {
             <td>' . $fila['Costo_serv'] . '</td>
 			<td>' . $fila['fecha_consulta'] . '</td>
 			<td style="font-weight:bold">' . $fila['pago'] . '</t>
-            <td class=“text-center” id=boton_actualizar' . $contador . '><a  class="btn btn-info btn-xs btn-space btn-editar" href=datos_evaluacion.php?id=' . $idcotizar . ' style="font-weight: bold; color:white;"></a> <a  class="btn btn-danger btn-xs btn-space btn-eliminar" href=eliminar_evaluacion.php?id=' . $idcotizar . ' style="font-weight: bold; color:white; "></a></td>
-
-
+            <td class=“text-center” id=boton_actualizar' . $contador . '><a  class="btn btn-info btn-xs btn-space btn-editar" href=datos_evaluacion.php?id=' . $idcotizar . ' style="font-weight: bold; color:white;"></a> <a  class="btn btn-danger btn-xs btn-space btn-eliminar" href=eliminar_evaluacion.php?id=' . $idcotizar . ' style="font-weight: bold; color:white; "></a> <a  class="btn btn-success btn-xs btn-space btn-descargar" href=Reporte_cotizacion_final.php?id='.$idcotizar.' style="font-weight: bold; color:white;"></td>
+           
 
 			
 			

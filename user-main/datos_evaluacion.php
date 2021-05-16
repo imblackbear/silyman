@@ -181,18 +181,30 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
                         <div class="width70 floatR"><input name="costo_s" class="width100 form-control text-warning" id="estado-pago" type="text" value="<?php echo $lista['pago']; ?>" style="width:  55%; font-weight:bold" size="50" readonly=""></div>
                         <br> <br>
                     </div>
-                    
+                     
+                     
                     <div class="button-container">
+                      
+                       
                         <div class="title-paypal">
+                             
+                            
                             <h3>Precio total: $<?php echo $lista['Costo_serv']; ?> MXN</h3>
                             <br>
-
+                      
                         </div>
+                         
                         <!--Boton de paypal-->
                         <div id="boton-paypal" class="">
                             <div class="button-paypal col-md-4" id="paypal-button-container"></div>
                         </div>
+                         
                     </div>
+                    <div class="floatL">
+                    
+                        <a class="btn btn-primary btn-success" href="Reporte_cotizacion_final.php?id=<?php echo $ID; ?>" style="font-weight: bold; color:white; border-radius:5px;"> Descargar PDF</a>
+                    </div>
+                    <br> <br>
                 </div>
             </div>
         </section>

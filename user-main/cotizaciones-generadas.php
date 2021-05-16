@@ -69,7 +69,7 @@
                         <label>Buscar cotización:&nbsp;
                             <input id="busqueda" class="width100 form-control" name="busqueda" type="text" size="50">
                         </label>
-                        <a class="btn btn-success" href="Reporte_cotizaciones.php" style="font-weight: bold; color:white;"> Descargar</a>
+                        
                     </div>
                 </section>
                 <section id="tabla_resultado">

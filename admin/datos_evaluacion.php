@@ -180,7 +180,7 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
 
                     <div class="form-group">
                         <div class="width30 floatL"><label>Concepto</label></div>
-                        <div class="width70 floatR"><input name="concep" src="" class="width100 form-control" type="text" value="<?php echo $lista['Concepto']; ?>" size="50" pattern="[a-zA-Z0-9À-žñÑ ]+" oninvalid="this.setCustomValidity('Complete el campo. Solo puede ingresar letras y números')" oninput="this.setCustomValidity('')" minlength="5"></div>
+                        <div class="width70 floatR"><input name="concep" src="" class="width100 form-control" type="text" value="<?php echo $lista['Concepto']; ?>" size="50" pattern="[a-zA-Z0-9À-žñÑ ]+" oninvalid="this.setCustomValidity('Complete el campo. Solo puede ingresar letras y números')" oninput="this.setCustomValidity('')" 1></div>
                         <br> <br>
                     </div>
                     <div class="form-group">
