@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Questrial&display=swap');
+
 :root{
     --green-hard: #176b13;
     --green-first: #aad047;
@@ -12,6 +15,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Barlow', sans-serif;
+}
+
+body{
+    font-family: 'Questrial', sans-serif;
 }
 
 
@@ -21,7 +33,7 @@
 
 nav{
     background-color: #fff;
-    z-index: 100;
+    z-index: 4000;
 }
 
 nav div .img-logo{
@@ -56,7 +68,7 @@ nav div .img-logo img{
     text-decoration: none;
     color: var(--green-hard);
     font-weight: 500;
-    border-bottom: 1px solid var(--green-hard);
+    border-bottom: 2px solid var(--green-hard);
 }
 
 
@@ -309,4 +321,65 @@ nav div .img-logo img{
     height: 100px;
     margin: 0 auto;
     justify-content: center;
+
+}
+
+/* FOOTER */
+footer{
+    z-index: 100;
+    position: absolute;
+    top: -10;
+    width: 100%;
+    min-height: 200px;
+    background-color: var(--green-third);
+}
+
+.left-footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+footer .footer-img img{
+    margin: 0 auto;
+    width:300px;
+    height:auto;
+}
+
+.right-footer{
+    display: flex;
+    margin: 50px 0;
+    align-items: center;
+}
+
+.right-footer ul {
+    list-style-type: none;
+}
+
+.right-footer ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.right-footer ul li a:hover{
+    color: rgb(30, 30, 30);
+    font-weight: bold;
+}
+
+.right-footer ul li a img{
+    width:20px;
+    height:20px;
+    margin-right: 5px;
+}
+
+
+.down-footer{
+    width: 100%;
+    min-height:50px;
+    background-color: rgb(30, 30, 30);
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
 }
