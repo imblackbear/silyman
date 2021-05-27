@@ -28,9 +28,9 @@ $lista =  mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 <body>
 
-            <!--Navegación-->
-            <nav class="navbar navbar-expand-lg navbar-fixed-top">
-        <div class="container-fluid">  
+    <!--Navegación-->
+    <nav class="navbar navbar-expand-lg navbar-fixed-top">
+        <div class="container-fluid">
             <a class="navbar-brand img-logo" href="">
                 <img class="logo-sily" src="../img/logo.png" alt="logo de silyman">
             </a>
@@ -46,16 +46,16 @@ $lista =  mysqli_fetch_array($result, MYSQLI_ASSOC);
                         <a class="nav-link" href="CRUD_cotizaciones.php">Cotizaciones</a>
                     </li>
                     <li class="nav-item">
-                         <a class="nav-link" href="cotizacion_evaluacion.php">Evaluaciones</a>
+                        <a class="nav-link" href="cotizacion_evaluacion.php">Evaluaciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../logout.php">Cerrar Sesion </a>
+                        <a class="nav-link" href="../logout.php">Cerrar sesión </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-        
+
 
     <br>
     <br>
@@ -96,7 +96,7 @@ $lista =  mysqli_fetch_array($result, MYSQLI_ASSOC);
                         </div>
                         <div class="form-group">
                             <div class="width30 floatL"><label>Comentarios</label></div>
-                            <div class="width70 floatR"><textarea class="width100 form-control" type="text" style="height: 135px;" size="50" readonly=""><?php echo $lista['Comentarios']; ?> </textarea> </div>
+                            <div class="width70 floatR"><textarea class="width100 form-control" type="text" style="min-height: 135px;" size="50" readonly=""><?php echo $lista['Comentarios']; ?> </textarea> </div>
                             <br> <br> <br> <br> <br> <br>
                         </div>
 
@@ -105,6 +105,7 @@ $lista =  mysqli_fetch_array($result, MYSQLI_ASSOC);
                             <div class="width70 floatR"><input name="fecha_cotizacion" class="width100 form-control" size="30" style="width:  55%;" value="<?php echo $lista['fecha_consulta']; ?>" readonly=""></div>
                             <br> <br>
                         </div>
+
                     </div>
                 </div>
             </div>

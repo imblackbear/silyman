@@ -46,9 +46,9 @@ if ($buscar->num_rows > 0)
 	<table class="table table-striped custab" id="crud" >
 <thead>		
 <tr>
-			<th>Numero de cotización</th>
-            <th>Concepto</th>
-            <th>Costo de servicio ($MXN)</th>
+			<th>Número de cotización</th>
+            <th>Descripción </th>
+            <th>Costo del servicio</th>
             <th>Fecha de cotizacion</th>
 			<th>Estado del pago</th>
             <th id="boton_eliminar"></th>
@@ -65,7 +65,7 @@ $contador=0;
 		'<tr>
             <td>'.$fila['idEvaluacion'].'</td>
 			<td>'.$fila['Concepto'].'</td>
-            <td>'.$fila['Costo_serv'].'</td>
+            <td>$'.$fila['Costo_serv'].' MXN</td>
 			<td>'.$fila['fecha_consulta'].'</td>
 			<td style="font-weight:bold"><p id="estado-pago">'.$fila['pago'].'</p></td>
             <td class=“text-center” id=boton_actualizar'.$contador.'><a  class="btn btn-info btn-xs btn-space" href=datos_evaluacion.php?id='.$idcotizar.' style="font-weight: bold; color:white;">Pagar</a></td>

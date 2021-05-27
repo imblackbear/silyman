@@ -53,13 +53,13 @@ $lista2 =  mysqli_fetch_array($result2, MYSQLI_ASSOC);
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="cotizaciones.php">Gerenar cotización</a>
+                        <a class="nav-link" href="cotizaciones.php">Generar cotización</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="cotizaciones-generadas.php">Solicitudes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../logout.php">Cerrar Sesion </a>
+                        <a class="nav-link" href="../logout.php">Cerrar sesión </a>
                     </li>
                 </ul>
             </div>

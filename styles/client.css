@@ -5,6 +5,10 @@
     --green-third: #64a446;
 }
 
+body{
+    background-color: rgba(238, 238, 238, 0.644) !important;
+}
+
 .custab {
     border: 1px solid #ccc;
     padding: 20px;
@@ -32,7 +36,7 @@
 nav div .img-logo {
     display: flex;
     flex-direction: column;
-    height: 60px;
+    height: 80px;
     justify-content: center;
 }
 
@@ -72,9 +76,9 @@ button .navbar-toggler-icon {
 
 .boxStyle {
     padding: 20px;
-    border-radius: 25px;
-    border-top: 6px solid #dc3545;
-    border-bottom: 6px solid #28a745;
+    border-radius: 15px;
+    border-top: 5px solid #dc3545;
+    border-bottom: 5px solid rgba(30,30,30, .4);
 }
 
 .width50 {

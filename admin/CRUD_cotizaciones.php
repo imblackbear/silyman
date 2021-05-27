@@ -42,7 +42,7 @@
                         <a class="nav-link" href="cotizacion_evaluacion.php">Evaluaciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../logout.php">Cerrar Sesion </a>
+                        <a class="nav-link" href="../logout.php">Cerrar sesión </a>
                     </li>
                 </ul>
             </div>

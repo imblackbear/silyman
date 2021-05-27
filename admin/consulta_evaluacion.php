@@ -58,7 +58,7 @@ if ($buscar->num_rows > 0) {
             <td>' . $fila['idEvaluacion'] . '</td>
 			<td>' . $fila['cotizacion_idCotizacion'] . '</td>
 			<td>' . $fila['Concepto'] . '</td>
-            <td>' . $fila['Costo_serv'] . '</td>
+            <td>$' . $fila['Costo_serv'] . ' MXN</td>
 			<td>' . $fila['fecha_consulta'] . '</td>
 			<td style="font-weight:bold">' . $fila['pago'] . '</t>
             <td class=“text-center” id=boton_actualizar' . $contador . '><a  class="btn btn-info btn-xs btn-space btn-editar" href=datos_evaluacion.php?id=' . $idcotizar . ' style="font-weight: bold; color:white;"></a> <a  class="btn btn-danger btn-xs btn-space btn-eliminar" href=eliminar_evaluacion.php?id=' . $idcotizar . ' style="font-weight: bold; color:white; "></a> <a  class="btn btn-success btn-xs btn-space btn-descargar" href=Reporte_cotizacion_final.php?id='.$idcotizar.' style="font-weight: bold; color:white;"></td>

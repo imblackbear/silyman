@@ -33,13 +33,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="cotizaciones.php">Gerenar cotización</a>
+                        <a class="nav-link" href="cotizaciones.php">Generar cotización</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="cotizaciones-generadas.php">Solicitudes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../logout.php">Cerrar Sesion </a>
+                        <a class="nav-link" href="../logout.php">Cerrar sesión </a>
                     </li>
                 </ul>
             </div>
@@ -66,8 +66,9 @@
 
                 <section>
                     <div class="floatL">
-                        <label>Buscar cotización:&nbsp;
-                            <input id="busqueda" class="width100 form-control" name="busqueda" type="text" size="50">
+                        <label>Respuesta de cotizaciones:&nbsp;
+                            <!-- Filtrado de cotización del cliente-->
+                            <!-- <input id="busqueda" class="width100 form-control" name="busqueda" type="text" size="50">-->
                         </label>
                         
                     </div>

@@ -59,7 +59,7 @@ session_start();
         <div class="col-lg-6">
             <div class="d-flex justify-content-center align-items-center login-container">
                 <form class="login-form text-center needs-validation" action="registro_clientes.php" method="post" onsubmit="return validacion()">
-                    <h1 class="mb-2 font-weight-light text-uppercase">Fumigaciones SILYMAN</h1>
+                    <h1 class="mb-2 font-weight-light text-uppercase"><b>Fumigaciones SILYMAN</b></h1>
                     <div class="form-group row">
                         <span class="col-sm-3">Nombres:</span>
                         <input type="text" name="nom" class="form-control rounded-pill form-control-lg col-sm-9" placeholder="Ingrese su nombre" maxlength="40" required pattern="[a-zA-ZÀ-žñÑ ]+" oninvalid="this.setCustomValidity('Complete el campo e ingrese solo letras')" oninput="this.setCustomValidity('')">

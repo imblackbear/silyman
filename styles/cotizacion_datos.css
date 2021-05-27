@@ -1,3 +1,7 @@
+:root{
+    --green-hard: #176b13;
+    --green-soft: #64a446;
+  }
 body {
     background: #eee;
     color: #666;
@@ -23,9 +27,9 @@ body {
 
 .boxStyle {
     padding: 20px;
-    border-radius: 25px;
-    border-top: 6px solid #dc3545;
-    border-bottom: 6px solid #28a745;
+    border-radius: 15px;
+    border-top: 5px solid #dc3545;
+    border-bottom: 5px solid rgba(30,30,30, .4);
 }
 
 .logo-sily {
@@ -40,18 +44,18 @@ nav div .img-logo{
     justify-content: center;
 }
 
-nav div .img-logo img{
+nav div .img-logo img {
     vertical-align: middle;
     width: 200px;
     height: auto;
 }
 
-nav{
+nav {
     background-color: #fff;
     z-index: 100;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     position: fixed;
 }
@@ -60,28 +64,31 @@ button .navbar-toggler-icon {
     background-image: url('../img/menu.png');
 }
 
-.nav-item .nav-link{
+.nav-item .nav-link {
     text-decoration: none;
     color: #444444;
     font-size: 18px;
 }
 
-.nav-item .nav-link:hover{
+.nav-item .nav-link:hover {
     text-decoration: none;
     color: var(--green-hard);
     font-weight: 500;
     border-bottom: 1px solid var(--green-hard);
 }
 
+
 @media (max-width: 1420px) {
     .home {
     max-width: 800px;
     min-width: 360px;
+    height: auto;
     margin: 0 auto;
     }
     .home_2 {
         max-width: 800px;
         min-width: 360px;
+        height: auto;
         margin: 20px auto;
     }
 }

@@ -16,13 +16,13 @@ $_SESSION['idCliente'];
     <!--Alertas con SweetAlert-->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!--EStilos-->
-    <link rel="stylesheet" href="../styles/client.css">
+    
 </head>
 
 <body>
 
     <!--Navegación-->
-    <nav class="navbar navbar-expand-lg navbar-fixed-top">
+<nav class="navbar navbar-expand-lg navbar-fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand img-logo" href="">
                 <img class="logo-sily" src="../img/logo.png" alt="logo de silyman">
@@ -39,7 +39,7 @@ $_SESSION['idCliente'];
                         <a class="nav-link" href="cotizaciones-generadas.php">Solicitudes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../logout.php">Cerrar Sesion </a>
+                        <a class="nav-link" href="../logout.php">Cerrar sesión </a>
                     </li>
                 </ul>
             </div>
@@ -50,7 +50,7 @@ $_SESSION['idCliente'];
         <form class="login-form text-center needs-validation" method="post">
             <h1 class="mb-5 font-weight-light text-uppercase">COTIZACIÓN DE SERVICIO</h1>
             <div class="form-group row">
-                <span class="col-sm-3">Id del cliente:</span>
+                <span class="col-sm-3">Número de cliente:</span>
                 <input type="number" name="idcliente" class="form-control rounded-pill form-control-lg col-sm-9" value="<?php echo $_SESSION['idCliente']; ?>" readonly="">
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
@@ -80,8 +80,9 @@ $_SESSION['idCliente'];
                 <textarea type="text" name="d-servicio" class="area-container form-control col-sm-9" placeholder="Descripción del problema y del servicio requerido" required style="min-height:90px; max-height: 300px;" ></textarea>
                 <div class="invalid-feedback">Complete el campo</div>
             </div>
-            <button type="submit" class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase" name="enviar-co">Enviar</button>
-            <br><a href="../index.php"><strong>Regresar</strong></a>
+            <button type="submit" class="btn mt-3 rounded-pill btn-lg btn-custom btn-block text-uppercase" name="enviar-co">Enviar</button>
+            <br><p>¿Ya cuenta con una cotización?<a href="./cotizaciones-generadas.php"><strong> Revise el estado aquí</strong></a></p>
+
         </form>
         
     </div>

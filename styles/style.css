@@ -47,6 +47,9 @@ nav div .img-logo img{
     vertical-align: middle;
     width: 200px;
     height: auto;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
 }
 
 .navbar{
@@ -240,6 +243,8 @@ nav div .img-logo img{
     text-align: center;
     margin: auto;
 }
+/*     background-color: #555F45;
+*/
 
 .service-container h3{
     padding-top: 0px;
@@ -340,7 +345,6 @@ footer{
     display: flex;
     justify-content:center;
     align-items: center;
-    margin-top: 40px;
 }
 
 footer .footer-img img{

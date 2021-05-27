@@ -1,3 +1,7 @@
+body{
+    background-color: #eee;
+}
+
 .custab{
     border: 1px solid #ccc;
     padding: 5px;
@@ -52,9 +56,9 @@ nav{
 
 .boxStyle {
     padding: 20px;
-    border-radius: 25px;
-    border-top: 6px solid #dc3545;
-    border-bottom: 6px solid #28a745;
+    border-radius: 15px;
+    border-top: 5px solid #dc3545;
+    border-bottom: 5px solid rgba(30,30,30, .4);
 }
 .width50{
 		width: 50%;

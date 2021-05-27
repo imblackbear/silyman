@@ -62,7 +62,7 @@ $contador=0;
                     
 			<td>'.$fila['idCotizacion'].'</td>
 			<td>'.$fila['Tipo_insecto'].'</td>
-			<td>'.$fila['Metros'].'</td>
+			<td>'.$fila['Metros'].'m²</td>
             <td>'.$fila['Comentarios'].'</td>
 			<td>'.$fila['fecha_consulta'].'</td>
 			<td>'.$fila['cliente_idCliente'].'</td>
